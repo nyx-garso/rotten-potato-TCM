@@ -1,10 +1,9 @@
-# Test Case: RP-MKT-0002 | Marketplace Category Filtering and Sort Selection
+# Test Case: RP-MKT-0002 | Artwork Price and Buy Control Visibility
 
-**Summary:** Verify that marketplace filters and sort settings can be changed without breaking the catalog layout.
+**Summary:** Verify that marketplace artwork cards display the price and Buy control in the live release.
 
-**Preconditions:** Marketplace page is open and catalog controls are loaded.
+**Preconditions:** Authenticated user session is available and the Marketplace catalog is loaded.
 
 | # | Step Actions | Expected Results |
 |---|---|---|
-| 1 | Select a category from the Marketplace category dropdown. | System applies the selected category filter and narrows the visible catalog results to matching items. |
-| 2 | Change the sort dropdown to a different ordering option. | System reorders the catalog results according to the chosen sort mode while keeping the page stable and usable. |
+| 1 | Open the Marketplace view from the main navigation. | System renders artwork cards with visible price metadata and a Buy control. |
