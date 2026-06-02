@@ -2,12 +2,12 @@
 
 | Module / Requirement ID | Description | Linked Test Cases |
 | :--- | :--- | :--- |
-| **AUTH-01** | Account Sign Up and Registration Form | `RP-AUTH-0001`, `RP-AUTH-0002` |
-| **AUTH-02** | Form Fields Input and Validation Constraints | `RP-AUTH-0003`, `RP-AUTH-0004` |
-| **AUTH-03** | Account Lifecycle Activation via Email Verification | `RP-AUTH-0005`, `RP-AUTH-0006` |
-| **SRCH-01** | Global Text Search Execution Engine | `RP-SRCH-0001` |
-| **SRCH-02** | Dynamic Filter Tags Processing | `RP-SRCH-0002` |
-| **SRCH-03** | Interactive Result Cards (Hover and Selection Views) | `RP-SRCH-0003`, `RP-SRCH-0004` |
+| **AUTH-01** | Account Sign Up and Registration Form | **[RP-AUTH-0001](Test%20Suites/Authentication/RP-AUTH-0001.md)**, **[RP-AUTH-0002](Test%20Suites/Authentication/RP-AUTH-0002.md)** |
+| **AUTH-02** | Form Fields Input and Validation Constraints | **[RP-AUTH-0003](Test%20Suites/Authentication/RP-AUTH-0003.md)**, **[RP-AUTH-0004](Test%20Suites/Authentication/RP-AUTH-0004.md)** |
+| **AUTH-03** | Account Lifecycle Activation via Email Verification | **[RP-AUTH-0005](Test%20Suites/Authentication/RP-AUTH-0005.md)**, **[RP-AUTH-0006](Test%20Suites/Authentication/RP-AUTH-0006.md)** |
+| **SRCH-01** | Global Text Search Execution Engine | **[RP-SRCH-0001](Test%20Suites/Discovery-and-Navigation/RP-SRCH-0001.md)** |
+| **SRCH-02** | Dynamic Filter Tags Processing | **[RP-SRCH-0002](Test%20Suites/Discovery-and-Navigation/RP-SRCH-0002.md)** |
+| **SRCH-03** | Interactive Result Cards (Hover and Selection Views) | **[RP-SRCH-0003](Test%20Suites/Discovery-and-Navigation/RP-SRCH-0003.md)**, **[RP-SRCH-0004](Test%20Suites/Discovery-and-Navigation/RP-SRCH-0004.md)** |
 | **PAY-01** | Shopping Cart Display and Selection Framework | `RP-PAY-0001`, `RP-PAY-0002` |
 | **PAY-02** | Shipping Validation and Delivery Parameters | `RP-PAY-0003`, `RP-PAY-0004` |
 | **PAY-03** | Payment Channel Ingestion & Final Review Cycles | `RP-PAY-0005`, `RP-PAY-0006`, `RP-PAY-0007` |
