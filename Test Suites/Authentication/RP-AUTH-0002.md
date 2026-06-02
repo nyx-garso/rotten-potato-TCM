@@ -2,7 +2,7 @@
 
 **Summary:** Verify that the displayed registration form explicitly features structural data input fields.
 
-**Preconditions:** User has executed `RP-AUTH-0001` successfully.
+**Preconditions:** User has executed **[RP-AUTH-0001](Test%20Suites/Authentication/RP-AUTH-0001.md)** successfully.
 
 | # | Step Actions | Expected Results |
 |---|---|---|
