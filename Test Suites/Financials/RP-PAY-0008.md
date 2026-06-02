@@ -1,0 +1,9 @@
+# Test Case: RP-PAY-0008 | Final Transaction Commit and Order Dispatch
+
+**Summary:** Verify that confirming the transaction changes order lifecycle indicators and forwards data targets to the seller context.
+
+**Preconditions:** Order details are locked in the static review view container.
+
+| # | Step Actions | Expected Results |
+|---|---|---|
+| 1 | Click the "Place Order" workflow submission button. | System finalizes order processing states, stores records, and dispatches invoice data records directly to the specific artist account context. |
