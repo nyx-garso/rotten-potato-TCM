@@ -13,6 +13,7 @@
 | **SRCH-01** | Discovery and Navigation | Global Text Search Execution Engine | **[RP-SRCH-0001](Test%20Suites/Discovery-and-Navigation/RP-SRCH-0001.md)** |
 | **SRCH-02** | Discovery and Navigation | Dynamic Filter Tags Processing | **[RP-SRCH-0002](Test%20Suites/Discovery-and-Navigation/RP-SRCH-0002.md)** |
 | **SRCH-03** | Discovery and Navigation | Interactive Result Cards (Hover and Selection Views) | **[RP-SRCH-0003](Test%20Suites/Discovery-and-Navigation/RP-SRCH-0003.md)**, **[RP-SRCH-0004](Test%20Suites/Discovery-and-Navigation/RP-SRCH-0004.md)** |
+| **MKT-01** | Marketplace | Art Catalog Browsing, Search, Filter, and Sort Controls | **[RP-MKT-0001](Test%20Suites/Marketplace/RP-MKT-0001.md)**, **[RP-MKT-0002](Test%20Suites/Marketplace/RP-MKT-0002.md)** |
 | **PAY-01** | Financials | Shopping Cart Display and Selection Framework | **[RP-PAY-0001](Test%20Suites/Financials/RP-PAY-0001.md)**, **[RP-PAY-0002](Test%20Suites/Financials/RP-PAY-0002.md)** |
 | **PAY-02** | Financials | Shipping Validation and Delivery Parameters | **[RP-PAY-0003](Test%20Suites/Financials/RP-PAY-0003.md)**, **[RP-PAY-0004](Test%20Suites/Financials/RP-PAY-0004.md)** |
 | **PAY-03** | Financials | Payment Channel Ingestion & Final Review Cycles | **[RP-PAY-0005](Test%20Suites/Financials/RP-PAY-0005.md)**, **[RP-PAY-0006](Test%20Suites/Financials/RP-PAY-0006.md)**, **[RP-PAY-0007](Test%20Suites/Financials/RP-PAY-0007.md)** |
@@ -22,7 +23,9 @@
 | **MSG-01** | Communication | Active User Directory Querying and Context Loading | **[RP-MSG-0001](Test%20Suites/Communication/RP-MSG-0001.md)**, **[RP-MSG-0002](Test%20Suites/Communication/RP-MSG-0002.md)** |
 | **MSG-02** | Communication | Message Dispatches and Structural File Attachments | **[RP-MSG-0003](Test%20Suites/Communication/RP-MSG-0003.md)**, **[RP-MSG-0004](Test%20Suites/Communication/RP-MSG-0004.md)** |
 | **MSG-03** | Communication | RTC Connection Pipelines (Voice, Video, & Call States) | **[RP-MSG-0005](Test%20Suites/Communication/RP-MSG-0005.md)**, **[RP-MSG-0006](Test%20Suites/Communication/RP-MSG-0006.md)** |
+| **MSG-04** | Communication | Inbox Search and Empty Conversation State Handling | **[RP-MSG-0007](Test%20Suites/Communication/RP-MSG-0007.md)**, **[RP-MSG-0008](Test%20Suites/Communication/RP-MSG-0008.md)** |
 | **COMM-01** | Commission-Requests | Client Commission Board Submissions & Lifecycle Management | **[RP-COMM-0001](Test%20Suites/Commission-Requests/RP-COMM-0001.md)**, **[RP-COMM-0002](Test%20Suites/Commission-Requests/RP-COMM-0002.md)** |
 | **COMM-02** | Commission-Requests | Artist Engagements and Inter-Module Workflow Routing | **[RP-COMM-0003](Test%20Suites/Commission-Requests/RP-COMM-0003.md)**, **[RP-COMM-0004](Test%20Suites/Commission-Requests/RP-COMM-0004.md)** |
+| **COMM-03** | Commission-Requests | Commission Board Browsing, Tabs, and Request List Segmentation | **[RP-COMM-0005](Test%20Suites/Commission-Requests/RP-COMM-0005.md)**, **[RP-COMM-0006](Test%20Suites/Commission-Requests/RP-COMM-0006.md)** |
 | **REV-01** | Reputation | Rating Overlay Engine & Profile Metric Ingestion | **[RP-REV-0001](Test%20Suites/Reputation/RP-REV-0001.md)**, **[RP-REV-0002](Test%20Suites/Reputation/RP-REV-0002.md)**, **[RP-REV-0003](Test%20Suites/Reputation/RP-REV-0003.md)** |
 | **REV-02** | Reputation | Community Peer Review Curation (Helpful & Moderation States) | **[RP-REV-0004](Test%20Suites/Reputation/RP-REV-0004.md)**, **[RP-REV-0005](Test%20Suites/Reputation/RP-REV-0005.md)** |
