@@ -1,6 +1,7 @@
 # Test Case: RP-SRCH-0002 | Search Tag Filtering Processing
 
 **Summary:** Verify that updating explicit filter criterion filters listings dynamically in the user panel.
+
 **Preconditions:** User workspace is currently viewing active search results.
 
 | # | Step Actions | Expected Results |

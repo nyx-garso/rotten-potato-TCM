@@ -1,6 +1,7 @@
 # Test Case: RP-AUTH-0006 | Account Activation Lifecycle Completion
 
 **Summary:** Verify that passing the validation link parameter unlocks the user account record and processes entry routing.
+
 **Preconditions:** Automated verification email is accessible.
 
 | # | Step Actions | Expected Results |

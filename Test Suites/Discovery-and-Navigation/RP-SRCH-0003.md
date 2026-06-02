@@ -1,6 +1,7 @@
 # Test Case: RP-SRCH-0003 | Result Card Summary Overlay
 
 **Summary:** Verify that mouse cursor placement over specific record nodes triggers informational popovers.
+
 **Preconditions:** Structural listing items are visible in the search output feed.
 
 | # | Step Actions | Expected Results |

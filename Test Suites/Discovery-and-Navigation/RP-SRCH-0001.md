@@ -1,6 +1,7 @@
 # Test Case: RP-SRCH-0001 | Text Input Search Action Execution
 
 **Summary:** Verify that entering text query keys routes the workspace view directly to the query results layout.
+
 **Preconditions:** Search field object is responsive and interactable.
 
 | # | Step Actions | Expected Results |

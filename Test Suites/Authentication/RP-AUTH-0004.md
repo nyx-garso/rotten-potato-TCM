@@ -1,6 +1,7 @@
 # Test Case: RP-AUTH-0004 | Registration Trigger & Pending Account State
 
 **Summary:** Verify that executing the sign-up workflow initializes the unverified database entry and sends a notification email.
+
 **Preconditions:** Input fields contain structurally valid data configurations.
 
 | # | Step Actions | Expected Results |

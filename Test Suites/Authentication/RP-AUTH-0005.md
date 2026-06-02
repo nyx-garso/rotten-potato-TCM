@@ -1,6 +1,7 @@
 # Test Case: RP-AUTH-0005 | Verification Link Receipt
 
 **Summary:** Verify that the automated verification payload arrives accurately at the targeted destination email platform.
+
 **Preconditions:** `RP-AUTH-0004` submission has processed completely.
 
 | # | Step Actions | Expected Results |
