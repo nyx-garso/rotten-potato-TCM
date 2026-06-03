@@ -1,3 +1,17 @@
+---
+ID: "RP-MSG-0007"
+Title: "Test Case: RP-MSG-0007 | Inbox Landing and Empty Conversation State"
+Priority: "Medium"
+Status: "draft"
+Automated: "no"
+Owner: ""
+Requirements: ""
+Postconditions: |
+  - Tested on https://rotten-potato-tau.vercel.app/homepage using account testuser1@test.com (password: testuser1).
+  - Cleanup: log out after the test; remove or revert any test data created (posts, requests, payments, profile changes)
+  - Verify environment returned to pre-test state before running subsequent tests.
+---
+
 # Test Case: RP-MSG-0007 | Inbox Landing and Empty Conversation State
 
 **Summary:** Verify that the inbox page loads with its search field and empty-state messaging when no conversations exist.
@@ -8,3 +22,10 @@
 |---|---|---|
 | 1 | Click the Messages button from the main navigation. | System opens the inbox view with the conversation search field and conversation panel layout visible. |
 | 2 | Observe the conversation list area when no threads are available. | System displays the empty-state message instead of a broken or blank conversation panel. |
+
+## Postconditions
+
+- Tested on https://rotten-potato-tau.vercel.app/homepage using account testuser1@test.com (password: testuser1).
+- Cleanup: log out after the test; remove or revert any test data created (posts, requests, payments, profile changes)
+- Verify environment returned to pre-test state before running subsequent tests.
+
