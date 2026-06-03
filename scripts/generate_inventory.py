@@ -64,6 +64,12 @@ def has_frontmatter(text):
     return text.lstrip().startswith('---') or re.match(r'^ID:\s', text)
 
 
+def yaml_quote(value):
+    text = '' if value is None else str(value)
+    escaped = text.replace('\\', '\\\\').replace('"', '\\"')
+    return f'"{escaped}"'
+
+
 def make_frontmatter(meta):
     lines = ['---']
     for k in ['ID','Title','Priority','Status','Automated','Owner','Requirements','Postconditions']:
@@ -71,7 +77,12 @@ def make_frontmatter(meta):
         # ensure lists are comma-separated strings
         if isinstance(v, list):
             v = ', '.join(v)
-        lines.append(f"{k}: {v}")
+        if k == 'Postconditions' and isinstance(v, str) and '\n' in v:
+            lines.append(f'{k}: |')
+            for raw_line in v.splitlines():
+                lines.append(f'  {raw_line}')
+        else:
+            lines.append(f'{k}: {yaml_quote(v)}')
     lines.append('---\n')
     return '\n'.join(lines)
 
