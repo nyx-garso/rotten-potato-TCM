@@ -72,6 +72,7 @@ Test Case Management Repository for Project Rotten Potato
 - [Requirements Traceability Matrix](Requirements%20Traceability%20Matrix.md)
 - Test case template
 - Conventions and metadata
+- Scripts
 - How to contribute
 
 ## Overview
@@ -107,17 +108,20 @@ Placing this consistently makes it easier to generate inventories or export CSVs
 - Link each test to requirement IDs present in the [Requirements Traceability Matrix](Requirements%20Traceability%20Matrix.md).
 - Add `Automated` and `Status` fields so tests can be filtered for planning and automation.
 
-### CSV inventory and automation
+## Scripts
 
-A script is provided at `scripts/generate_inventory.py` that scans `Test Suites/`, generates `OnTrack TCM - Test Suites.csv`, and can insert metadata frontmatter and a `## Postconditions` section into test markdown files when run with `--apply`.
+Two helper scripts are included under `scripts/`:
 
-Run from the repository root:
+- `scripts/generate_inventory.py` scans `Test Suites/` and writes `OnTrack TCM - Test Suites.csv` with the current test inventory.
+- `scripts/normalize_frontmatter.py` rewrites each test case frontmatter into valid YAML so editors and parsers can read the files without errors.
+
+Run them from the repository root:
 
 ```bash
-python scripts/generate_inventory.py        # generate CSV only
-python scripts/generate_inventory.py --apply  # also add frontmatter and postconditions to files (creates .bak backups)
+python scripts/generate_inventory.py
+python scripts/normalize_frontmatter.py
 ```
 
-Review changes before committing when using `--apply`.
+If you change the test case metadata format, rerun both scripts so the CSV and markdown files stay in sync.
 
 
