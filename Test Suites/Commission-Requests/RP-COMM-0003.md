@@ -1,15 +1,17 @@
 ---
-ID: RP-COMM-0003
-Title: Test Case: RP-COMM-0003 | Proposal Specifications Workflow Guard
-Priority: Medium
-Status: draft
-Automated: no
-Owner: 
-Requirements: 
-Postconditions: "- Tested on https://rotten-potato-tau.vercel.app/homepage using account testuser1@test.com (password: testuser1).
-- Cleanup: log out after the test; remove or revert any test data created (posts, requests, payments, profile changes)
-- Verify environment returned to pre-test state before running subsequent tests."
+ID: "RP-COMM-0003"
+Title: "Test Case: RP-COMM-0003 | Proposal Specifications Workflow Guard"
+Priority: "Medium"
+Status: "draft"
+Automated: "no"
+Owner: ""
+Requirements: ""
+Postconditions: |
+  - Tested on https://rotten-potato-tau.vercel.app/homepage using account testuser1@test.com (password: testuser1).
+  - Cleanup: log out after the test; remove or revert any test data created (posts, requests, payments, profile changes)
+  - Verify environment returned to pre-test state before running subsequent tests.
 ---
+
 # Test Case: RP-COMM-0003 | Proposal Specifications Workflow Guard
 
 **Summary:** Verify that bidding actions trigger secondary data parameter validations before submission.

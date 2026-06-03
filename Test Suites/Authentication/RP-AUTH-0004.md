@@ -1,15 +1,17 @@
 ---
-ID: RP-AUTH-0004
-Title: Test Case: RP-AUTH-0004 | Registration Trigger & Pending Account State
-Priority: Medium
-Status: draft
-Automated: no
-Owner: 
-Requirements: 
-Postconditions: "- Tested on https://rotten-potato-tau.vercel.app/homepage using account testuser1@test.com (password: testuser1).
-- Cleanup: log out after the test; remove or revert any test data created (posts, requests, payments, profile changes)
-- Verify environment returned to pre-test state before running subsequent tests."
+ID: "RP-AUTH-0004"
+Title: "Test Case: RP-AUTH-0004 | Registration Trigger & Pending Account State"
+Priority: "Medium"
+Status: "draft"
+Automated: "no"
+Owner: ""
+Requirements: ""
+Postconditions: |
+  - Tested on https://rotten-potato-tau.vercel.app/homepage using account testuser1@test.com (password: testuser1).
+  - Cleanup: log out after the test; remove or revert any test data created (posts, requests, payments, profile changes)
+  - Verify environment returned to pre-test state before running subsequent tests.
 ---
+
 # Test Case: RP-AUTH-0004 | Registration Trigger & Pending Account State
 
 **Summary:** Verify that executing the sign-up workflow initializes the unverified database entry and sends a notification email.
