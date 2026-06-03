@@ -1,15 +1,17 @@
 ---
-ID: RP-MSG-0005
-Title: Test Case: RP-MSG-0005 | RTC Communication Pipeline Signaling Requests
-Priority: Medium
-Status: draft
-Automated: no
-Owner: 
-Requirements: 
-Postconditions: "- Tested on https://rotten-potato-tau.vercel.app/homepage using account testuser1@test.com (password: testuser1).
-- Cleanup: log out after the test; remove or revert any test data created (posts, requests, payments, profile changes)
-- Verify environment returned to pre-test state before running subsequent tests."
+ID: "RP-MSG-0005"
+Title: "Test Case: RP-MSG-0005 | RTC Communication Pipeline Signaling Requests"
+Priority: "Medium"
+Status: "draft"
+Automated: "no"
+Owner: ""
+Requirements: ""
+Postconditions: |
+  - Tested on https://rotten-potato-tau.vercel.app/homepage using account testuser1@test.com (password: testuser1).
+  - Cleanup: log out after the test; remove or revert any test data created (posts, requests, payments, profile changes)
+  - Verify environment returned to pre-test state before running subsequent tests.
 ---
+
 # Test Case: RP-MSG-0005 | RTC Communication Pipeline Signaling Requests
 
 **Summary:** Verify that launching hardware calling routines attempts network requests to peer accounts.
