@@ -1,30 +1,31 @@
 ---
 ID: "RP-PAY-0006"
-Title: "Test Case: RP-PAY-0006 | Payment Ingestion Source Validation"
+Title: "Test Case: RP-PAY-0006 | Checkout Disabled With No Selection"
 Priority: "Medium"
-Status: "draft"
+Status: "ready"
 Automated: "no"
 Owner: ""
 Requirements: ""
 Postconditions: |
-  - Tested on https://rotten-potato-tau.vercel.app/homepage using account testuser1@test.com (password: testuser1).
-  - Cleanup: log out after the test; remove or revert any test data created (posts, requests, payments, profile changes)
-  - Verify environment returned to pre-test state before running subsequent tests.
+  - Tested on http://localhost:3000/homepage using account testuser1@test.com (password: testuser1).
+  - Cleanup: re-select cart items if continuing with checkout tests.
+  - Log out after testing when no further authenticated tests are queued.
 ---
 
-# Test Case: RP-PAY-0006 | Payment Ingestion Source Validation
+# Test Case: RP-PAY-0006 | Checkout Disabled With No Selection
 
-**Summary:** Verify that selecting payment routes initiates authorization checking loops.
+**Summary:** Verify that checkout cannot be started when no cart item is selected.
 
-**Preconditions:** Integrated channel payment selectors are interactable.
+**Preconditions:** User is logged in and the `/cart` page displays at least one cart item.
 
 | # | Step Actions | Expected Results |
 |---|---|---|
-| 1 | Select an explicit financial processing channel option and supply data criteria parameters. | System executes runtime checks confirming the syntax and field format validations of the financial source information. |
+| 1 | Clear all selected cart item checkboxes, or click `Select All` when all items are selected. | No cart items remain selected. |
+| 2 | Observe the `Order Summary` panel. | The subtotal shows `0 items`, the total reflects no selected merchandise, and `Proceed to Checkout (0)` is disabled. |
+| 3 | Attempt to start checkout without selecting an item. | The disabled checkout button prevents submission; no PayMongo checkout session is created. |
 
 ## Postconditions
 
 - Tested on https://rotten-potato-tau.vercel.app/homepage using account testuser1@test.com (password: testuser1).
-- Cleanup: log out after the test; remove or revert any test data created (posts, requests, payments, profile changes)
-- Verify environment returned to pre-test state before running subsequent tests.
-
+- Cleanup: re-select cart items if continuing with checkout tests.
+- Log out after testing when no further authenticated tests are queued.

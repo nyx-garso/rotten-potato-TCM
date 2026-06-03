@@ -1,30 +1,31 @@
 ---
 ID: "RP-PAY-0003"
-Title: "Test Case: RP-PAY-0003 | Customer Identity and Location Ingestion"
+Title: "Test Case: RP-PAY-0003 | Selective Checkout Item Selection"
 Priority: "Medium"
-Status: "draft"
+Status: "ready"
 Automated: "no"
 Owner: ""
 Requirements: ""
 Postconditions: |
-  - Tested on https://rotten-potato-tau.vercel.app/homepage using account testuser1@test.com (password: testuser1).
-  - Cleanup: log out after the test; remove or revert any test data created (posts, requests, payments, profile changes)
-  - Verify environment returned to pre-test state before running subsequent tests.
+  - Tested on http://localhost:3000/homepage using account testuser1@test.com (password: testuser1).
+  - Cleanup: restore the original selected-item state if continuing with checkout tests.
+  - Log out after testing when no further authenticated tests are queued.
 ---
 
-# Test Case: RP-PAY-0003 | Customer Identity and Location Ingestion
+# Test Case: RP-PAY-0003 | Selective Checkout Item Selection
 
-**Summary:** Verify that entering textual location details populates the shipping form state fields.
+**Summary:** Verify that item checkboxes control which cart items are included in checkout totals.
 
-**Preconditions:** The shipping data gathering view is rendered on screen.
+**Preconditions:** User is logged in and the `/cart` page displays at least one cart item.
 
 | # | Step Actions | Expected Results |
 |---|---|---|
-| 1 | Input user information into the distinct text form fields (e.g., customer address name, telephone digits). | System maps the characters and updates form context state. |
+| 1 | Observe the cart immediately after loading. | All current cart items are selected by default, and the `Proceed to Checkout (#)` button count matches the number of selected items. |
+| 2 | Clear one item checkbox or use `Select All` to toggle selection. | The selected-item count in `Subtotal (# items)` and `Proceed to Checkout (#)` updates to match the checked items. |
+| 3 | Re-select the item or use `Select All` again. | The item is included again in the subtotal and checkout button count. |
 
 ## Postconditions
 
 - Tested on https://rotten-potato-tau.vercel.app/homepage using account testuser1@test.com (password: testuser1).
-- Cleanup: log out after the test; remove or revert any test data created (posts, requests, payments, profile changes)
-- Verify environment returned to pre-test state before running subsequent tests.
-
+- Cleanup: restore the original selected-item state if continuing with checkout tests.
+- Log out after testing when no further authenticated tests are queued.

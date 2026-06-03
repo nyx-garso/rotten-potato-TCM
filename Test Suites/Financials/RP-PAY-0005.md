@@ -1,30 +1,31 @@
 ---
 ID: "RP-PAY-0005"
-Title: "Test Case: RP-PAY-0005 | Payment Gateways Sub-panel Transitions"
+Title: "Test Case: RP-PAY-0005 | Cart Item Removal and Empty State"
 Priority: "Medium"
-Status: "draft"
+Status: "ready"
 Automated: "no"
 Owner: ""
 Requirements: ""
 Postconditions: |
-  - Tested on https://rotten-potato-tau.vercel.app/homepage using account testuser1@test.com (password: testuser1).
-  - Cleanup: log out after the test; remove or revert any test data created (posts, requests, payments, profile changes)
-  - Verify environment returned to pre-test state before running subsequent tests.
+  - Tested on http://localhost:3000/homepage using account testuser1@test.com (password: testuser1).
+  - Cleanup: re-add removed test items if needed for later checkout tests.
+  - Log out after testing when no further authenticated tests are queued.
 ---
 
-# Test Case: RP-PAY-0005 | Payment Gateways Sub-panel Transitions
+# Test Case: RP-PAY-0005 | Cart Item Removal and Empty State
 
-**Summary:** Verify that advancing from delivery data triggers payment method integrations.
+**Summary:** Verify that users can remove cart items and receive the correct empty-cart message when no items remain.
 
-**Preconditions:** Shipping data entry fields are populated and verified.
+**Preconditions:** User is logged in and the `/cart` page displays at least one cart item that may be safely removed.
 
 | # | Step Actions | Expected Results |
 |---|---|---|
-| 1 | Click the designated "Proceed to Payment" action control item. | System transitions the active view layout step to expose all integrated payment channels. |
+| 1 | Click the remove/trash button on a cart item. | The item row is temporarily disabled while updating, then the item is removed from the cart list and selected-item totals are recalculated. |
+| 2 | If multiple items remain, remove each remaining test item. | The cart list continues to update without requiring a full page reload. |
+| 3 | Observe the page when the cart has no items. | The empty state appears with `Your cart is empty`, explanatory text, and a `Continue Shopping` button that routes back to `/homepage`. |
 
 ## Postconditions
 
 - Tested on https://rotten-potato-tau.vercel.app/homepage using account testuser1@test.com (password: testuser1).
-- Cleanup: log out after the test; remove or revert any test data created (posts, requests, payments, profile changes)
-- Verify environment returned to pre-test state before running subsequent tests.
-
+- Cleanup: re-add removed test items if needed for later checkout tests.
+- Log out after testing when no further authenticated tests are queued.
