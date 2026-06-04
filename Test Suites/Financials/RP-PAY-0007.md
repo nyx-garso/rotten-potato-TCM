@@ -1,4 +1,4 @@
----
+﻿---
 ID: "RP-PAY-0007"
 Title: "Test Case: RP-PAY-0007 | PayMongo Checkout Session Initialization"
 Priority: "High"
@@ -7,7 +7,7 @@ Automated: "no"
 Owner: ""
 Requirements: ""
 Postconditions: |
-  - Tested on http://localhost:3000/homepage using account testuser1@test.com (password: testuser1).
+  - Tested on https://rotten-potato-tau.vercel.app/homepage using account testuser1@test.com (password: testuser1).
   - Cleanup: cancel unpaid gateway sessions and remove/revert any test cart or payment rows created.
   - Log out after testing when no further authenticated tests are queued.
 ---
