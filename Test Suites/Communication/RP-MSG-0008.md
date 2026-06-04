@@ -1,6 +1,6 @@
 ---
-ID: "RP-REV-0003"
-Title: "Test Case: RP-REV-0003 | Rating Metadata Follows Search Results"
+ID: "RP-MSG-0008"
+Title: "Test Case: RP-MSG-0008 | Inbox Conversation Search Handling"
 Priority: "Medium"
 Status: "draft"
 Automated: "no"
@@ -12,15 +12,16 @@ Postconditions: |
   - Verify environment returned to pre-test state before running subsequent tests.
 ---
 
-# Test Case: RP-REV-0003 | Rating Metadata Follows Search Results
+# Test Case: RP-MSG-0008 | Inbox Conversation Search Handling
 
-**Summary:** Verify that rating metadata stays attached to the matching artwork card after a search.
+**Summary:** Verify that inbox search input accepts text and updates the visible conversation results state.
 
-**Preconditions:** Marketplace catalog search field is responsive.
+**Preconditions:** Inbox page is open and the search box is enabled.
 
 | # | Step Actions | Expected Results |
 |---|---|---|
-| 1 | Search for a valid artwork name or artist name. | System returns the matching artwork card with its rating metadata still visible. |
+| 1 | Type a valid contact name or conversation keyword into the inbox search field. | System accepts the query and updates the conversation results state based on the entered term. |
+| 2 | Submit a query that returns no matching conversations. | System shows a no-results state without breaking the inbox layout. |
 
 ## Postconditions
 

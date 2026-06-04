@@ -1,6 +1,6 @@
 ---
-ID: "RP-REV-0003"
-Title: "Test Case: RP-REV-0003 | Rating Metadata Follows Search Results"
+ID: "RP-MSG-0007"
+Title: "Test Case: RP-MSG-0007 | Inbox Landing and Empty Conversation State"
 Priority: "Medium"
 Status: "draft"
 Automated: "no"
@@ -12,15 +12,16 @@ Postconditions: |
   - Verify environment returned to pre-test state before running subsequent tests.
 ---
 
-# Test Case: RP-REV-0003 | Rating Metadata Follows Search Results
+# Test Case: RP-MSG-0007 | Inbox Landing and Empty Conversation State
 
-**Summary:** Verify that rating metadata stays attached to the matching artwork card after a search.
+**Summary:** Verify that the inbox page loads with its search field and empty-state messaging when no conversations exist.
 
-**Preconditions:** Marketplace catalog search field is responsive.
+**Preconditions:** Authenticated user session is available.
 
 | # | Step Actions | Expected Results |
 |---|---|---|
-| 1 | Search for a valid artwork name or artist name. | System returns the matching artwork card with its rating metadata still visible. |
+| 1 | Click the Messages button from the main navigation. | System opens the inbox view with the conversation search field and conversation panel layout visible. |
+| 2 | Observe the conversation list area when no threads are available. | System displays the empty-state message instead of a broken or blank conversation panel. |
 
 ## Postconditions
 
