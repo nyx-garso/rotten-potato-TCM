@@ -1,56 +1,60 @@
 ID,Title,Module,Priority,Status,Owner,ReqIDs,Automated,Postconditions,File
-RP-AUTH-0001,Test Case: RP-AUTH-0001 | Sign Up Page Navigation,Test Suites/Authentication,Medium,draft,Requirements:,Postconditions:,no,---,Test Suites/Authentication/RP-AUTH-0001.md
-RP-AUTH-0002,Test Case: RP-AUTH-0002 | Sign Up Fields Form Presentation,Test Suites/Authentication,Medium,draft,Requirements:,Postconditions:,no,---,Test Suites/Authentication/RP-AUTH-0002.md
-RP-AUTH-0003,Test Case: RP-AUTH-0003 | Live Input Form Field Validation,Test Suites/Authentication,Medium,draft,Requirements:,Postconditions:,no,---,Test Suites/Authentication/RP-AUTH-0003.md
-RP-AUTH-0004,Test Case: RP-AUTH-0004 | Registration Trigger & Pending Account State,Test Suites/Authentication,Medium,draft,Requirements:,Postconditions:,no,---,Test Suites/Authentication/RP-AUTH-0004.md
-RP-AUTH-0005,Test Case: RP-AUTH-0005 | Verification Link Receipt,Test Suites/Authentication,Medium,draft,Requirements:,Postconditions:,no,---,Test Suites/Authentication/RP-AUTH-0005.md
-RP-AUTH-0006,Test Case: RP-AUTH-0006 | Account Activation Lifecycle Completion,Test Suites/Authentication,Medium,draft,Requirements:,Postconditions:,no,---,Test Suites/Authentication/RP-AUTH-0006.md
-RP-COMM-0001,Test Case: RP-COMM-0001 | Job Creation Overlay Modal Instantiation,Test Suites/Commission-Requests,Medium,draft,Requirements:,Postconditions:,no,---,Test Suites/Commission-Requests/RP-COMM-0001.md
-RP-COMM-0002,Test Case: RP-COMM-0002 | Public Commission Feed Ingestion,Test Suites/Commission-Requests,Medium,draft,Requirements:,Postconditions:,no,---,Test Suites/Commission-Requests/RP-COMM-0002.md
-RP-COMM-0003,Test Case: RP-COMM-0003 | Proposal Specifications Workflow Guard,Test Suites/Commission-Requests,Medium,draft,Requirements:,Postconditions:,no,---,Test Suites/Commission-Requests/RP-COMM-0003.md
-RP-COMM-0004,Test Case: RP-COMM-0004 | Inter-Module Cross-Routing Verification,Test Suites/Commission-Requests,Medium,draft,Requirements:,Postconditions:,no,---,Test Suites/Commission-Requests/RP-COMM-0004.md
-RP-COMM-0005,Test Case: RP-COMM-0005 | Commission Board Default View and Tab Switching,Test Suites/Commission-Requests,Medium,draft,Requirements:,Postconditions:,no,---,Test Suites/Commission-Requests/RP-COMM-0005.md
-RP-COMM-0006,Test Case: RP-COMM-0006 | Commission Request List Segmentation,Test Suites/Commission-Requests,Medium,draft,Requirements:,Postconditions:,no,---,Test Suites/Commission-Requests/RP-COMM-0006.md
-RP-MSG-0001,Test Case: RP-MSG-0001 | Target User Profile Lookup Execution,Test Suites/Communication,Medium,draft,Requirements:,Postconditions:,no,---,Test Suites/Communication/RP-MSG-0001.md
-RP-MSG-0002,Test Case: RP-MSG-0002 | Conversation Thread Storage Restorations,Test Suites/Communication,Medium,draft,Requirements:,Postconditions:,no,---,Test Suites/Communication/RP-MSG-0002.md
-RP-MSG-0003,Test Case: RP-MSG-0003 | Secured Alphanumeric Payload Dispatching,Test Suites/Communication,Medium,draft,Requirements:,Postconditions:,no,---,Test Suites/Communication/RP-MSG-0003.md
-RP-MSG-0004,Test Case: RP-MSG-0004 | Local Binary Object Media Upload Gateways,Test Suites/Communication,Medium,draft,Requirements:,Postconditions:,no,---,Test Suites/Communication/RP-MSG-0004.md
-RP-MSG-0005,Test Case: RP-MSG-0005 | RTC Communication Pipeline Signaling Requests,Test Suites/Communication,Medium,draft,Requirements:,Postconditions:,no,---,Test Suites/Communication/RP-MSG-0005.md
-RP-MSG-0006,Test Case: RP-MSG-0006 | Remote Peer Handshake Acceptance Verification,Test Suites/Communication,Medium,draft,Requirements:,Postconditions:,no,---,Test Suites/Communication/RP-MSG-0006.md
-RP-MSG-0007,Test Case: RP-MSG-0007 | Inbox Landing and Empty Conversation State,Test Suites/Communication,Medium,draft,Requirements:,Postconditions:,no,---,Test Suites/Communication/RP-MSG-0007.md
-RP-MSG-0008,Test Case: RP-MSG-0008 | Inbox Conversation Search Handling,Test Suites/Communication,Medium,draft,Requirements:,Postconditions:,no,---,Test Suites/Communication/RP-MSG-0008.md
-RP-SRCH-0001,Test Case: RP-SRCH-0001 | Text Input Search Action Execution,Test Suites/Discovery-and-Navigation,Medium,draft,Requirements:,Postconditions:,no,---,Test Suites/Discovery-and-Navigation/RP-SRCH-0001.md
-RP-SRCH-0002,Test Case: RP-SRCH-0002 | Search Tag Filtering Processing,Test Suites/Discovery-and-Navigation,Medium,draft,Requirements:,Postconditions:,no,---,Test Suites/Discovery-and-Navigation/RP-SRCH-0002.md
-RP-SRCH-0003,Test Case: RP-SRCH-0003 | Result Card Summary Overlay,Test Suites/Discovery-and-Navigation,Medium,draft,Requirements:,Postconditions:,no,---,Test Suites/Discovery-and-Navigation/RP-SRCH-0003.md
-RP-SRCH-0004,Test Case: RP-SRCH-0004 | Target Search Node Routing Validation,Test Suites/Discovery-and-Navigation,Medium,draft,Requirements:,Postconditions:,no,---,Test Suites/Discovery-and-Navigation/RP-SRCH-0004.md
-RP-PAY-0001,Test Case: RP-PAY-0001 | Shopping Cart View Ingestion,Test Suites/Financials,Medium,draft,Requirements:,Postconditions:,no,---,Test Suites/Financials/RP-PAY-0001.md
-RP-PAY-0002,Test Case: RP-PAY-0002 | Checkout Funnel Entry Trigger,Test Suites/Financials,Medium,draft,Requirements:,Postconditions:,no,---,Test Suites/Financials/RP-PAY-0002.md
-RP-PAY-0003,Test Case: RP-PAY-0003 | Customer Identity and Location Ingestion,Test Suites/Financials,Medium,draft,Requirements:,Postconditions:,no,---,Test Suites/Financials/RP-PAY-0003.md
-RP-PAY-0004,Test Case: RP-PAY-0004 | Field-Level Shipping Validation Handlers,Test Suites/Financials,Medium,draft,Requirements:,Postconditions:,no,---,Test Suites/Financials/RP-PAY-0004.md
-RP-PAY-0005,Test Case: RP-PAY-0005 | Payment Gateways Sub-panel Transitions,Test Suites/Financials,Medium,draft,Requirements:,Postconditions:,no,---,Test Suites/Financials/RP-PAY-0005.md
-RP-PAY-0006,Test Case: RP-PAY-0006 | Payment Ingestion Source Validation,Test Suites/Financials,Medium,draft,Requirements:,Postconditions:,no,---,Test Suites/Financials/RP-PAY-0006.md
-RP-PAY-0007,Test Case: RP-PAY-0007 | Absolute Checkout Matrix Review Layout,Test Suites/Financials,Medium,draft,Requirements:,Postconditions:,no,---,Test Suites/Financials/RP-PAY-0007.md
-RP-PAY-0008,Test Case: RP-PAY-0008 | Final Transaction Commit and Order Dispatch,Test Suites/Financials,Medium,draft,Requirements:,Postconditions:,no,---,Test Suites/Financials/RP-PAY-0008.md
-RP-MKT-0001,Test Case: RP-MKT-0001 | Marketplace Landing and Search Controls,Test Suites/Marketplace,Medium,draft,Requirements:,Postconditions:,no,---,Test Suites/Marketplace/RP-MKT-0001.md
-RP-MKT-0002,Test Case: RP-MKT-0002 | Artwork Price and Buy Control Visibility,Test Suites/Marketplace,Medium,draft,Requirements:,Postconditions:,no,---,Test Suites/Marketplace/RP-MKT-0002.md
-RP-MKT-0003,Test Case: RP-MKT-0003 | Ask Artist Control Availability and Browse Stability,Test Suites/Marketplace,Medium,draft,Requirements:,Postconditions:,no,---,Test Suites/Marketplace/RP-MKT-0003.md
-RP-PRF-0001,RP-PRF-0001 — Profile Display,Test Suites/Profile-Management,Medium,draft,Requirements:,Postconditions:,no,---,Test Suites/Profile-Management/RP-PRF-0001.md
-RP-PRF-0002,RP-PRF-0002 — Profile Display (Edge Cases),Test Suites/Profile-Management,Medium,draft,Requirements:,Postconditions:,no,---,Test Suites/Profile-Management/RP-PRF-0002.md
-RP-PRF-0003,RP-PRF-0003 — Edit Profile (Persistence),Test Suites/Profile-Management,Medium,draft,Requirements:,Postconditions:,no,---,Test Suites/Profile-Management/RP-PRF-0003.md
-RP-PRF-0004,RP-PRF-0004 — Edit Profile (Cancel),Test Suites/Profile-Management,Medium,draft,Requirements:,Postconditions:,no,---,Test Suites/Profile-Management/RP-PRF-0004.md
-RP-PRF-0005,RP-PRF-0005 — Account Type Handling,Test Suites/Profile-Management,Medium,draft,Requirements:,Postconditions:,no,---,Test Suites/Profile-Management/RP-PRF-0005.md
-RP-PRF-0006,RP-PRF-0006 — Recent Activity Logging,Test Suites/Profile-Management,Medium,draft,Requirements:,Postconditions:,no,---,Test Suites/Profile-Management/RP-PRF-0006.md
-RP-PRF-0007,RP-PRF-0007 — Recent Activity (Empty State),Test Suites/Profile-Management,Medium,draft,Requirements:,Postconditions:,no,---,Test Suites/Profile-Management/RP-PRF-0007.md
-RP-PRF-0008,RP-PRF-0008 — Become a Seller (Upgrade Flow),Test Suites/Profile-Management,Medium,draft,Requirements:,Postconditions:,no,---,Test Suites/Profile-Management/RP-PRF-0008.md
-RP-PRF-0009,RP-PRF-0009 — Become a Seller (Validation & Restrictions),Test Suites/Profile-Management,Medium,draft,Requirements:,Postconditions:,no,---,Test Suites/Profile-Management/RP-PRF-0009.md
-RP-REV-0001,Test Case: RP-REV-0001 | Artwork Rating Visibility,Test Suites/Reputation,Medium,draft,Requirements:,Postconditions:,no,---,Test Suites/Reputation/RP-REV-0001.md
-RP-REV-0002,Test Case: RP-REV-0002 | Zero-Review Count Display,Test Suites/Reputation,Medium,draft,Requirements:,Postconditions:,no,---,Test Suites/Reputation/RP-REV-0002.md
-RP-REV-0003,Test Case: RP-REV-0003 | Rating Metadata Follows Search Results,Test Suites/Reputation,Medium,draft,Requirements:,Postconditions:,no,---,Test Suites/Reputation/RP-REV-0003.md
-RP-REV-0004,Test Case: RP-REV-0004 | Rating Metadata Persists Across Filters,Test Suites/Reputation,Medium,draft,Requirements:,Postconditions:,no,---,Test Suites/Reputation/RP-REV-0004.md
-RP-REV-0005,Test Case: RP-REV-0005 | Rating Metadata and Price Cohesion,Test Suites/Reputation,Medium,draft,Requirements:,Postconditions:,no,---,Test Suites/Reputation/RP-REV-0005.md
-RP-FEED-0001,Test Case: RP-FEED-0001 | Canvas Content Creator Panel Ingestion,Test Suites/Social-and-Community,Medium,draft,Requirements:,Postconditions:,no,---,Test Suites/Social-and-Community/RP-FEED-0001.md
-RP-FEED-0002,Test Case: RP-FEED-0002 | Image Canvas Creation and Timeline Injection,Test Suites/Social-and-Community,Medium,draft,Requirements:,Postconditions:,no,---,Test Suites/Social-and-Community/RP-FEED-0002.md
-RP-FEED-0003,Test Case: RP-FEED-0003 | Reaction Counter Mutators and Web Notification Dispatches,Test Suites/Social-and-Community,Medium,draft,Requirements:,Postconditions:,no,---,Test Suites/Social-and-Community/RP-FEED-0003.md
-RP-FEED-0004,Test Case: RP-FEED-0004 | Media Post Dialogue Expansion,Test Suites/Social-and-Community,Medium,draft,Requirements:,Postconditions:,no,---,Test Suites/Social-and-Community/RP-FEED-0004.md
-RP-FEED-0005,Test Case: RP-FEED-0005 | Text Comment Injection Pipeline,Test Suites/Social-and-Community,Medium,draft,Requirements:,Postconditions:,no,---,Test Suites/Social-and-Community/RP-FEED-0005.md
-RP-FEED-0006,Test Case: RP-FEED-0006 | Asset Cross-Posting Share Workflows,Test Suites/Social-and-Community,Medium,draft,Requirements:,Postconditions:,no,---,Test Suites/Social-and-Community/RP-FEED-0006.md
+RP-AUTH-0001,---,Test Suites/Authentication,"""Medium""","""draft""","""""","""""","""no""",|,Test Suites/Authentication/RP-AUTH-0001.md
+RP-AUTH-0002,---,Test Suites/Authentication,"""Medium""","""draft""","""""","""""","""no""",|,Test Suites/Authentication/RP-AUTH-0002.md
+RP-AUTH-0003,---,Test Suites/Authentication,"""Medium""","""draft""","""""","""""","""no""",|,Test Suites/Authentication/RP-AUTH-0003.md
+RP-AUTH-0004,---,Test Suites/Authentication,"""Medium""","""draft""","""""","""""","""no""",|,Test Suites/Authentication/RP-AUTH-0004.md
+RP-AUTH-0005,---,Test Suites/Authentication,"""Medium""","""draft""","""""","""""","""no""",|,Test Suites/Authentication/RP-AUTH-0005.md
+RP-AUTH-0006,---,Test Suites/Authentication,"""Medium""","""draft""","""""","""""","""no""",|,Test Suites/Authentication/RP-AUTH-0006.md
+RP-COMM-0001,﻿---,Test Suites/Commission-Requests,"""Medium""","""ready""","""""","""""","""no""",|,Test Suites/Commission-Requests/RP-COMM-0001.md
+RP-COMM-0002,﻿---,Test Suites/Commission-Requests,"""High""","""ready""","""""","""""","""no""",|,Test Suites/Commission-Requests/RP-COMM-0002.md
+RP-COMM-0003,﻿---,Test Suites/Commission-Requests,"""High""","""ready""","""""","""""","""no""",|,Test Suites/Commission-Requests/RP-COMM-0003.md
+RP-COMM-0004,﻿---,Test Suites/Commission-Requests,"""High""","""ready""","""""","""""","""no""",|,Test Suites/Commission-Requests/RP-COMM-0004.md
+RP-COMM-0005,﻿---,Test Suites/Commission-Requests,"""Medium""","""ready""","""""","""""","""no""",|,Test Suites/Commission-Requests/RP-COMM-0005.md
+RP-COMM-0006,﻿---,Test Suites/Commission-Requests,"""High""","""ready""","""""","""""","""no""",|,Test Suites/Commission-Requests/RP-COMM-0006.md
+RP-MSG-0001,---,Test Suites/Communication,"""Medium""","""draft""","""""","""""","""no""",|,Test Suites/Communication/RP-MSG-0001.md
+RP-MSG-0002,---,Test Suites/Communication,"""Medium""","""draft""","""""","""""","""no""",|,Test Suites/Communication/RP-MSG-0002.md
+RP-MSG-0003,---,Test Suites/Communication,"""Medium""","""draft""","""""","""""","""no""",|,Test Suites/Communication/RP-MSG-0003.md
+RP-MSG-0004,---,Test Suites/Communication,"""Medium""","""draft""","""""","""""","""no""",|,Test Suites/Communication/RP-MSG-0004.md
+RP-MSG-0005,---,Test Suites/Communication,"""Medium""","""draft""","""""","""""","""no""",|,Test Suites/Communication/RP-MSG-0005.md
+RP-MSG-0006,---,Test Suites/Communication,"""Medium""","""draft""","""""","""""","""no""",|,Test Suites/Communication/RP-MSG-0006.md
+RP-MSG-0007,---,Test Suites/Communication,"""Medium""","""draft""","""""","""""","""no""",|,Test Suites/Communication/RP-MSG-0007.md
+RP-MSG-0008,---,Test Suites/Communication,"""Medium""","""draft""","""""","""""","""no""",|,Test Suites/Communication/RP-MSG-0008.md
+RP-SRCH-0001,---,Test Suites/Discovery-and-Navigation,"""Medium""","""draft""","""""","""""","""no""",|,Test Suites/Discovery-and-Navigation/RP-SRCH-0001.md
+RP-SRCH-0002,---,Test Suites/Discovery-and-Navigation,"""Medium""","""draft""","""""","""""","""no""",|,Test Suites/Discovery-and-Navigation/RP-SRCH-0002.md
+RP-SRCH-0003,---,Test Suites/Discovery-and-Navigation,"""Medium""","""draft""","""""","""""","""no""",|,Test Suites/Discovery-and-Navigation/RP-SRCH-0003.md
+RP-SRCH-0004,---,Test Suites/Discovery-and-Navigation,"""Medium""","""draft""","""""","""""","""no""",|,Test Suites/Discovery-and-Navigation/RP-SRCH-0004.md
+RP-PAY-0001,﻿---,Test Suites/Financials,"""Medium""","""ready""","""""","""""","""no""",|,Test Suites/Financials/RP-PAY-0001.md
+RP-PAY-0002,﻿---,Test Suites/Financials,"""Medium""","""ready""","""""","""""","""no""",|,Test Suites/Financials/RP-PAY-0002.md
+RP-PAY-0003,﻿---,Test Suites/Financials,"""Medium""","""ready""","""""","""""","""no""",|,Test Suites/Financials/RP-PAY-0003.md
+RP-PAY-0004,﻿---,Test Suites/Financials,"""Medium""","""ready""","""""","""""","""no""",|,Test Suites/Financials/RP-PAY-0004.md
+RP-PAY-0005,﻿---,Test Suites/Financials,"""Medium""","""ready""","""""","""""","""no""",|,Test Suites/Financials/RP-PAY-0005.md
+RP-PAY-0006,﻿---,Test Suites/Financials,"""Medium""","""ready""","""""","""""","""no""",|,Test Suites/Financials/RP-PAY-0006.md
+RP-PAY-0007,﻿---,Test Suites/Financials,"""High""","""ready""","""""","""""","""no""",|,Test Suites/Financials/RP-PAY-0007.md
+RP-PAY-0008,﻿---,Test Suites/Financials,"""High""","""ready""","""""","""""","""no""",|,Test Suites/Financials/RP-PAY-0008.md
+RP-PAY-0009,﻿---,Test Suites/Financials,"""High""","""ready""","""""","""""","""no""",|,Test Suites/Financials/RP-PAY-0009.md
+RP-PAY-0010,﻿---,Test Suites/Financials,"""High""","""ready""","""""","""""","""no""",|,Test Suites/Financials/RP-PAY-0010.md
+RP-PAY-0011,﻿---,Test Suites/Financials,"""Medium""","""ready""","""""","""""","""no""",|,Test Suites/Financials/RP-PAY-0011.md
+RP-PAY-0012,﻿---,Test Suites/Financials,"""High""","""ready""","""""","""""","""no""",|,Test Suites/Financials/RP-PAY-0012.md
+RP-MKT-0001,---,Test Suites/Marketplace,"""Medium""","""draft""","""""","""""","""no""",|,Test Suites/Marketplace/RP-MKT-0001.md
+RP-MKT-0002,---,Test Suites/Marketplace,"""Medium""","""draft""","""""","""""","""no""",|,Test Suites/Marketplace/RP-MKT-0002.md
+RP-MKT-0003,---,Test Suites/Marketplace,"""Medium""","""draft""","""""","""""","""no""",|,Test Suites/Marketplace/RP-MKT-0003.md
+RP-PRF-0001,---,Test Suites/Profile-Management,"""Medium""","""draft""","""""","""""","""no""",|,Test Suites/Profile-Management/RP-PRF-0001.md
+RP-PRF-0002,---,Test Suites/Profile-Management,"""Medium""","""draft""","""""","""""","""no""",|,Test Suites/Profile-Management/RP-PRF-0002.md
+RP-PRF-0003,---,Test Suites/Profile-Management,"""Medium""","""draft""","""""","""""","""no""",|,Test Suites/Profile-Management/RP-PRF-0003.md
+RP-PRF-0004,---,Test Suites/Profile-Management,"""Medium""","""draft""","""""","""""","""no""",|,Test Suites/Profile-Management/RP-PRF-0004.md
+RP-PRF-0005,---,Test Suites/Profile-Management,"""Medium""","""draft""","""""","""""","""no""",|,Test Suites/Profile-Management/RP-PRF-0005.md
+RP-PRF-0006,---,Test Suites/Profile-Management,"""Medium""","""draft""","""""","""""","""no""",|,Test Suites/Profile-Management/RP-PRF-0006.md
+RP-PRF-0007,---,Test Suites/Profile-Management,"""Medium""","""draft""","""""","""""","""no""",|,Test Suites/Profile-Management/RP-PRF-0007.md
+RP-PRF-0008,---,Test Suites/Profile-Management,"""Medium""","""draft""","""""","""""","""no""",|,Test Suites/Profile-Management/RP-PRF-0008.md
+RP-PRF-0009,---,Test Suites/Profile-Management,"""Medium""","""draft""","""""","""""","""no""",|,Test Suites/Profile-Management/RP-PRF-0009.md
+RP-REV-0001,---,Test Suites/Reputation,"""Medium""","""draft""","""""","""""","""no""",|,Test Suites/Reputation/RP-REV-0001.md
+RP-REV-0002,---,Test Suites/Reputation,"""Medium""","""draft""","""""","""""","""no""",|,Test Suites/Reputation/RP-REV-0002.md
+RP-REV-0003,---,Test Suites/Reputation,"""Medium""","""draft""","""""","""""","""no""",|,Test Suites/Reputation/RP-REV-0003.md
+RP-REV-0004,---,Test Suites/Reputation,"""Medium""","""draft""","""""","""""","""no""",|,Test Suites/Reputation/RP-REV-0004.md
+RP-REV-0005,---,Test Suites/Reputation,"""Medium""","""draft""","""""","""""","""no""",|,Test Suites/Reputation/RP-REV-0005.md
+RP-FEED-0001,---,Test Suites/Social-and-Community,"""Medium""","""draft""","""""","""""","""no""",|,Test Suites/Social-and-Community/RP-FEED-0001.md
+RP-FEED-0002,---,Test Suites/Social-and-Community,"""Medium""","""draft""","""""","""""","""no""",|,Test Suites/Social-and-Community/RP-FEED-0002.md
+RP-FEED-0003,---,Test Suites/Social-and-Community,"""Medium""","""draft""","""""","""""","""no""",|,Test Suites/Social-and-Community/RP-FEED-0003.md
+RP-FEED-0004,---,Test Suites/Social-and-Community,"""Medium""","""draft""","""""","""""","""no""",|,Test Suites/Social-and-Community/RP-FEED-0004.md
+RP-FEED-0005,---,Test Suites/Social-and-Community,"""Medium""","""draft""","""""","""""","""no""",|,Test Suites/Social-and-Community/RP-FEED-0005.md
+RP-FEED-0006,---,Test Suites/Social-and-Community,"""Medium""","""draft""","""""","""""","""no""",|,Test Suites/Social-and-Community/RP-FEED-0006.md

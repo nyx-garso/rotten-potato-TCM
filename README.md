@@ -1,4 +1,4 @@
-# rotten-potato-TCM
+﻿# rotten-potato-TCM
 Test Case Management Repository for Project Rotten Potato
 
 ## Table of Contents
@@ -13,12 +13,12 @@ Test suites
 		- [RP-AUTH-0005](Test%20Suites/Authentication/RP-AUTH-0005.md) — Email Verification / Activation
 		- [RP-AUTH-0006](Test%20Suites/Authentication/RP-AUTH-0006.md) — Email Verification / Activation
 	- Commission Requests
-		- [RP-COMM-0001](Test%20Suites/Commission-Requests/RP-COMM-0001.md) — Commission Board Submissions
-		- [RP-COMM-0002](Test%20Suites/Commission-Requests/RP-COMM-0002.md) — Commission Board Submissions
-		- [RP-COMM-0003](Test%20Suites/Commission-Requests/RP-COMM-0003.md) — Artist Engagements / Workflow Routing
-		- [RP-COMM-0004](Test%20Suites/Commission-Requests/RP-COMM-0004.md) — Artist Engagements / Workflow Routing
-		- [RP-COMM-0005](Test%20Suites/Commission-Requests/RP-COMM-0005.md) — Commission Board Browsing
-		- [RP-COMM-0006](Test%20Suites/Commission-Requests/RP-COMM-0006.md) — Commission Board Browsing
+		- [RP-COMM-0001](Test%20Suites/Commission-Requests/RP-COMM-0001.md) — Commissioner Opens Post Request Modal
+		- [RP-COMM-0002](Test%20Suites/Commission-Requests/RP-COMM-0002.md) — Commissioner Posts Open Request
+		- [RP-COMM-0003](Test%20Suites/Commission-Requests/RP-COMM-0003.md) — Artist Test Account Setup
+		- [RP-COMM-0004](Test%20Suites/Commission-Requests/RP-COMM-0004.md) — Artist Sends Commission Offer
+		- [RP-COMM-0005](Test%20Suites/Commission-Requests/RP-COMM-0005.md) — Commissioner Reviews Incoming Offers
+		- [RP-COMM-0006](Test%20Suites/Commission-Requests/RP-COMM-0006.md) — Commissioner Hires Artist
 	- Communication
 		- [RP-MSG-0001](Test%20Suites/Communication/RP-MSG-0001.md) — Active User Directory & Context
 		- [RP-MSG-0002](Test%20Suites/Communication/RP-MSG-0002.md) — Active User Directory & Context
@@ -34,14 +34,18 @@ Test suites
 		- [RP-SRCH-0003](Test%20Suites/Discovery-and-Navigation/RP-SRCH-0003.md) — Interactive Result Cards
 		- [RP-SRCH-0004](Test%20Suites/Discovery-and-Navigation/RP-SRCH-0004.md) — Interactive Result Cards
 	- Financials
-		- [RP-PAY-0001](Test%20Suites/Financials/RP-PAY-0001.md) — Shopping Cart Display
-		- [RP-PAY-0002](Test%20Suites/Financials/RP-PAY-0002.md) — Shopping Cart Display
-		- [RP-PAY-0003](Test%20Suites/Financials/RP-PAY-0003.md) — Shipping Validation
-		- [RP-PAY-0004](Test%20Suites/Financials/RP-PAY-0004.md) — Shipping Validation
-		- [RP-PAY-0005](Test%20Suites/Financials/RP-PAY-0005.md) — Payment Channel & Review
-		- [RP-PAY-0006](Test%20Suites/Financials/RP-PAY-0006.md) — Payment Channel & Review
-		- [RP-PAY-0007](Test%20Suites/Financials/RP-PAY-0007.md) — Payment Channel & Review
-		- [RP-PAY-0008](Test%20Suites/Financials/RP-PAY-0008.md) — Payment Channel & Review
+		- [RP-PAY-0001](Test%20Suites/Financials/RP-PAY-0001.md) — Marketplace Add to Cart
+		- [RP-PAY-0002](Test%20Suites/Financials/RP-PAY-0002.md) — Shopping Cart Page Display
+		- [RP-PAY-0003](Test%20Suites/Financials/RP-PAY-0003.md) — Selective Checkout Item Selection
+		- [RP-PAY-0004](Test%20Suites/Financials/RP-PAY-0004.md) — Cart Quantity Controls
+		- [RP-PAY-0005](Test%20Suites/Financials/RP-PAY-0005.md) — Cart Item Removal and Empty State
+		- [RP-PAY-0006](Test%20Suites/Financials/RP-PAY-0006.md) — Checkout Disabled With No Selection
+		- [RP-PAY-0007](Test%20Suites/Financials/RP-PAY-0007.md) — PayMongo Checkout Session Initialization
+		- [RP-PAY-0008](Test%20Suites/Financials/RP-PAY-0008.md) — PayMongo Paid Webhook Order Commit
+		- [RP-PAY-0009](Test%20Suites/Financials/RP-PAY-0009.md) — Commission Deposit Checkout Initialization
+		- [RP-PAY-0010](Test%20Suites/Financials/RP-PAY-0010.md) — Commission Deposit Paid Commit
+		- [RP-PAY-0011](Test%20Suites/Financials/RP-PAY-0011.md) — Artist Marks Commission Ready for Final Payment
+		- [RP-PAY-0012](Test%20Suites/Financials/RP-PAY-0012.md) — Commission Final Payment Commit
 	- Marketplace
 		- [RP-MKT-0001](Test%20Suites/Marketplace/RP-MKT-0001.md) — Art Catalog Browsing & Search
 		- [RP-MKT-0002](Test%20Suites/Marketplace/RP-MKT-0002.md) — Price/Buy Controls
