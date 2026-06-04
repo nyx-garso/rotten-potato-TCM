@@ -1,4 +1,4 @@
----
+﻿---
 ID: "RP-PAY-0004"
 Title: "Test Case: RP-PAY-0004 | Cart Quantity Controls"
 Priority: "Medium"
@@ -7,7 +7,7 @@ Automated: "no"
 Owner: ""
 Requirements: ""
 Postconditions: |
-  - Tested on http://localhost:3000/homepage using account testuser1@test.com (password: testuser1).
+  - Tested on https://rotten-potato-tau.vercel.app/homepage using account testuser1@test.com (password: testuser1).
   - Cleanup: return edited quantities to their original values.
   - Log out after testing when no further authenticated tests are queued.
 ---
