@@ -1,6 +1,6 @@
 ---
-ID: "RP-SRCH-0002"
-Title: "Test Case: RP-SRCH-0002 | Search Tag Filtering Processing"
+ID: "RP-PRF-0008"
+Title: "RP-PRF-0008 — Become a Seller (Upgrade Flow)"
 Priority: "Medium"
 Status: "draft"
 Automated: "no"
@@ -12,15 +12,18 @@ Postconditions: |
   - Verify environment returned to pre-test state before running subsequent tests.
 ---
 
-# Test Case: RP-SRCH-0002 | Search Tag Filtering Processing
+# RP-PRF-0008 — Become a Seller (Upgrade Flow)
 
-**Summary:** Verify that updating explicit filter criterion filters listings dynamically in the user panel.
-
-**Preconditions:** User workspace is currently viewing active search results.
+**Summary:** Verify that a client can upgrade their account to a seller. 
+ 
+**Preconditions:** Authenticated account with Standard Client type.
 
 | # | Step Actions | Expected Results |
-|---|---|---|
-| 1 | Toggle and select available category metadata criteria filter choices (e.g., specific art style, art type, pricing boundaries). | System processes the filter parameters and restricts the active records matching the selections. |
+|---|--------------|------------------|
+| 1 | Log in as Standard Client | Profile page loads with “Become a Seller” option |
+| 2 | Click “Become a Seller” | Seller upgrade form loads |
+| 3 | Fill required seller details and submit | Success message displayed |
+| 4 | Reload profile page | Account type updated to Seller, seller options visible |
 
 ## Postconditions
 

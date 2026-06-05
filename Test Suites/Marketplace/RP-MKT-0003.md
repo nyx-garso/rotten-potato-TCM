@@ -1,6 +1,6 @@
 ---
-ID: "RP-SRCH-0002"
-Title: "Test Case: RP-SRCH-0002 | Search Tag Filtering Processing"
+ID: "RP-MKT-0003"
+Title: "Test Case: RP-MKT-0003 | Ask Artist Control Availability and Browse Stability"
 Priority: "Medium"
 Status: "draft"
 Automated: "no"
@@ -12,15 +12,16 @@ Postconditions: |
   - Verify environment returned to pre-test state before running subsequent tests.
 ---
 
-# Test Case: RP-SRCH-0002 | Search Tag Filtering Processing
+# Test Case: RP-MKT-0003 | Ask Artist Control Availability and Browse Stability
 
-**Summary:** Verify that updating explicit filter criterion filters listings dynamically in the user panel.
+**Summary:** Verify that marketplace artwork cards expose an Ask Artist action and keep the browse layout stable.
 
-**Preconditions:** User workspace is currently viewing active search results.
+**Preconditions:** Marketplace catalog is loaded and an artwork card is visible.
 
 | # | Step Actions | Expected Results |
 |---|---|---|
-| 1 | Toggle and select available category metadata criteria filter choices (e.g., specific art style, art type, pricing boundaries). | System processes the filter parameters and restricts the active records matching the selections. |
+| 1 | Inspect the visible artwork card actions. | System displays the Ask Artist control alongside the Buy action. |
+| 2 | Use the Ask Artist control. | System keeps the user on the Marketplace browse surface without breaking the catalog layout. |
 
 ## Postconditions
 

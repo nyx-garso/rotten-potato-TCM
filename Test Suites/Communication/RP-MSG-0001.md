@@ -1,6 +1,6 @@
 ---
-ID: "RP-SRCH-0002"
-Title: "Test Case: RP-SRCH-0002 | Search Tag Filtering Processing"
+ID: "RP-MSG-0001"
+Title: "Test Case: RP-MSG-0001 | Target User Profile Lookup Execution"
 Priority: "Medium"
 Status: "draft"
 Automated: "no"
@@ -12,15 +12,15 @@ Postconditions: |
   - Verify environment returned to pre-test state before running subsequent tests.
 ---
 
-# Test Case: RP-SRCH-0002 | Search Tag Filtering Processing
+# Test Case: RP-MSG-0001 | Target User Profile Lookup Execution
 
-**Summary:** Verify that updating explicit filter criterion filters listings dynamically in the user panel.
+**Summary:** Verify that inputting user parameters inside search fields surfaces relevant profile directories.
 
-**Preconditions:** User workspace is currently viewing active search results.
+**Preconditions:** Directory lookup text input element is loaded.
 
 | # | Step Actions | Expected Results |
 |---|---|---|
-| 1 | Toggle and select available category metadata criteria filter choices (e.g., specific art style, art type, pricing boundaries). | System processes the filter parameters and restricts the active records matching the selections. |
+| 1 | Provide a valid search text query criteria inside the messaging user search element, then hit the Enter key. | System updates the workspace sub-panel layout view to render profile matches. |
 
 ## Postconditions
 

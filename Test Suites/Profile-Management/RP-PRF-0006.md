@@ -1,6 +1,6 @@
 ---
-ID: "RP-SRCH-0002"
-Title: "Test Case: RP-SRCH-0002 | Search Tag Filtering Processing"
+ID: "RP-PRF-0006"
+Title: "RP-PRF-0006 — Recent Activity Logging"
 Priority: "Medium"
 Status: "draft"
 Automated: "no"
@@ -12,15 +12,17 @@ Postconditions: |
   - Verify environment returned to pre-test state before running subsequent tests.
 ---
 
-# Test Case: RP-SRCH-0002 | Search Tag Filtering Processing
+# RP-PRF-0006 — Recent Activity Logging
 
-**Summary:** Verify that updating explicit filter criterion filters listings dynamically in the user panel.
+**Summary:** Verify that actions are logged in Recent Activity.  
 
-**Preconditions:** User workspace is currently viewing active search results.
+**Preconditions:** Authenticated account.
 
 | # | Step Actions | Expected Results |
-|---|---|---|
-| 1 | Toggle and select available category metadata criteria filter choices (e.g., specific art style, art type, pricing boundaries). | System processes the filter parameters and restricts the active records matching the selections. |
+|---|--------------|------------------|
+| 1 | Perform commission request | Entry appears in Recent Activity |
+| 2 | Purchase artwork | Entry appears in Recent Activity |
+| 3 | Save item to favorites | Entry appears in Recent Activity |
 
 ## Postconditions
 

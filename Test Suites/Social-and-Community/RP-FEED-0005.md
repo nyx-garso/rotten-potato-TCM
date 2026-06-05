@@ -1,6 +1,6 @@
 ---
-ID: "RP-SRCH-0002"
-Title: "Test Case: RP-SRCH-0002 | Search Tag Filtering Processing"
+ID: "RP-FEED-0005"
+Title: "Test Case: RP-FEED-0005 | Text Comment Injection Pipeline"
 Priority: "Medium"
 Status: "draft"
 Automated: "no"
@@ -12,15 +12,15 @@ Postconditions: |
   - Verify environment returned to pre-test state before running subsequent tests.
 ---
 
-# Test Case: RP-SRCH-0002 | Search Tag Filtering Processing
+# Test Case: RP-FEED-0005 | Text Comment Injection Pipeline
 
-**Summary:** Verify that updating explicit filter criterion filters listings dynamically in the user panel.
+**Summary:** Verify that submitting comments appends them to the card thread layout and updates metrics.
 
-**Preconditions:** User workspace is currently viewing active search results.
+**Preconditions:** Comment text entry box contains valid string inputs.
 
 | # | Step Actions | Expected Results |
 |---|---|---|
-| 1 | Toggle and select available category metadata criteria filter choices (e.g., specific art style, art type, pricing boundaries). | System processes the filter parameters and restricts the active records matching the selections. |
+| 1 | Write alphanumeric data into the comment input field and select the "Post" button element. | System stores the textual interaction string, appends it beneath the active media thread, and increments the aggregate thread counter by 1. |
 
 ## Postconditions
 

@@ -1,6 +1,6 @@
 ---
-ID: "RP-SRCH-0002"
-Title: "Test Case: RP-SRCH-0002 | Search Tag Filtering Processing"
+ID: "RP-PRF-0001"
+Title: "RP-PRF-0001 — Profile Display"
 Priority: "Medium"
 Status: "draft"
 Automated: "no"
@@ -12,15 +12,17 @@ Postconditions: |
   - Verify environment returned to pre-test state before running subsequent tests.
 ---
 
-# Test Case: RP-SRCH-0002 | Search Tag Filtering Processing
+# RP-PRF-0001 — Profile Display
 
-**Summary:** Verify that updating explicit filter criterion filters listings dynamically in the user panel.
+**Summary:** Verify that profile details (username, email, account type, join date) are displayed correctly.  
 
-**Preconditions:** User workspace is currently viewing active search results.
+**Preconditions:** Authenticated account.
 
 | # | Step Actions | Expected Results |
-|---|---|---|
-| 1 | Toggle and select available category metadata criteria filter choices (e.g., specific art style, art type, pricing boundaries). | System processes the filter parameters and restricts the active records matching the selections. |
+|---|--------------|------------------|
+| 1 | Log in and navigate to Profile page | Profile page loads successfully |
+| 2 | Check displayed username and email | Correct values are shown |
+| 3 | Check account type and join date | Correct values are shown |
 
 ## Postconditions
 

@@ -1,6 +1,6 @@
 ---
-ID: "RP-SRCH-0002"
-Title: "Test Case: RP-SRCH-0002 | Search Tag Filtering Processing"
+ID: "RP-FEED-0003"
+Title: "Test Case: RP-FEED-0003 | Reaction Counter Mutators and Web Notification Dispatches"
 Priority: "Medium"
 Status: "draft"
 Automated: "no"
@@ -12,15 +12,15 @@ Postconditions: |
   - Verify environment returned to pre-test state before running subsequent tests.
 ---
 
-# Test Case: RP-SRCH-0002 | Search Tag Filtering Processing
+# Test Case: RP-FEED-0003 | Reaction Counter Mutators and Web Notification Dispatches
 
-**Summary:** Verify that updating explicit filter criterion filters listings dynamically in the user panel.
+**Summary:** Verify that liking an asset updates interaction parameters and generates notifications for the post owner.
 
-**Preconditions:** User workspace is currently viewing active search results.
+**Preconditions:** An artwork asset card is visible in the active feed.
 
 | # | Step Actions | Expected Results |
 |---|---|---|
-| 1 | Toggle and select available category metadata criteria filter choices (e.g., specific art style, art type, pricing boundaries). | System processes the filter parameters and restricts the active records matching the selections. |
+| 1 | Click the heart-shaped reaction element icon component inside a loaded post card frame. | System registers a profile reaction, increments the public display calculation counter, and dispatches an automated notification alert hook to the content creator. |
 
 ## Postconditions
 

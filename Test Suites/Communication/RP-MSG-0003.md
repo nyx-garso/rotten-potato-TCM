@@ -1,6 +1,6 @@
 ---
-ID: "RP-SRCH-0002"
-Title: "Test Case: RP-SRCH-0002 | Search Tag Filtering Processing"
+ID: "RP-MSG-0003"
+Title: "Test Case: RP-MSG-0003 | Secured Alphanumeric Payload Dispatching"
 Priority: "Medium"
 Status: "draft"
 Automated: "no"
@@ -12,15 +12,15 @@ Postconditions: |
   - Verify environment returned to pre-test state before running subsequent tests.
 ---
 
-# Test Case: RP-SRCH-0002 | Search Tag Filtering Processing
+# Test Case: RP-MSG-0003 | Secured Alphanumeric Payload Dispatching
 
-**Summary:** Verify that updating explicit filter criterion filters listings dynamically in the user panel.
+**Summary:** Verify that submitting text payloads appends communication segments onto active streams.
 
-**Preconditions:** User workspace is currently viewing active search results.
+**Preconditions:** Active message chat interface is loaded with recipient node.
 
 | # | Step Actions | Expected Results |
 |---|---|---|
-| 1 | Toggle and select available category metadata criteria filter choices (e.g., specific art style, art type, pricing boundaries). | System processes the filter parameters and restricts the active records matching the selections. |
+| 1 | Type an outbound message inside the chat entry field and hit the system send trigger. | System applies communication protocol encryptions, transfers the data packet securely, and appends the text message onto the thread display. |
 
 ## Postconditions
 

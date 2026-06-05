@@ -1,6 +1,6 @@
 ---
-ID: "RP-SRCH-0002"
-Title: "Test Case: RP-SRCH-0002 | Search Tag Filtering Processing"
+ID: "RP-MSG-0007"
+Title: "Test Case: RP-MSG-0007 | Inbox Landing and Empty Conversation State"
 Priority: "Medium"
 Status: "draft"
 Automated: "no"
@@ -12,15 +12,16 @@ Postconditions: |
   - Verify environment returned to pre-test state before running subsequent tests.
 ---
 
-# Test Case: RP-SRCH-0002 | Search Tag Filtering Processing
+# Test Case: RP-MSG-0007 | Inbox Landing and Empty Conversation State
 
-**Summary:** Verify that updating explicit filter criterion filters listings dynamically in the user panel.
+**Summary:** Verify that the inbox page loads with its search field and empty-state messaging when no conversations exist.
 
-**Preconditions:** User workspace is currently viewing active search results.
+**Preconditions:** Authenticated user session is available.
 
 | # | Step Actions | Expected Results |
 |---|---|---|
-| 1 | Toggle and select available category metadata criteria filter choices (e.g., specific art style, art type, pricing boundaries). | System processes the filter parameters and restricts the active records matching the selections. |
+| 1 | Click the Messages button from the main navigation. | System opens the inbox view with the conversation search field and conversation panel layout visible. |
+| 2 | Observe the conversation list area when no threads are available. | System displays the empty-state message instead of a broken or blank conversation panel. |
 
 ## Postconditions
 

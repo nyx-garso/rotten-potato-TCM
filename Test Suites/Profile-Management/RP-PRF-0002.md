@@ -1,6 +1,6 @@
 ---
-ID: "RP-SRCH-0002"
-Title: "Test Case: RP-SRCH-0002 | Search Tag Filtering Processing"
+ID: "RP-PRF-0002"
+Title: "RP-PRF-0002 — Profile Display (Edge Cases)"
 Priority: "Medium"
 Status: "draft"
 Automated: "no"
@@ -12,15 +12,16 @@ Postconditions: |
   - Verify environment returned to pre-test state before running subsequent tests.
 ---
 
-# Test Case: RP-SRCH-0002 | Search Tag Filtering Processing
+# RP-PRF-0002 — Profile Display (Edge Cases)
 
-**Summary:** Verify that updating explicit filter criterion filters listings dynamically in the user panel.
+**Summary:** Validate handling of long usernames and unusual characters.  
 
-**Preconditions:** User workspace is currently viewing active search results.
+**Preconditions:** Authenticated account with modified profile data.
 
 | # | Step Actions | Expected Results |
-|---|---|---|
-| 1 | Toggle and select available category metadata criteria filter choices (e.g., specific art style, art type, pricing boundaries). | System processes the filter parameters and restricts the active records matching the selections. |
+|---|--------------|------------------|
+| 1 | Log in with account containing long username | Username is truncated or wrapped correctly |
+| 2 | Log in with account containing special characters | Special characters render correctly without breaking layout |
 
 ## Postconditions
 

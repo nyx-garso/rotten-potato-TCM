@@ -1,6 +1,6 @@
 ---
-ID: "RP-SRCH-0002"
-Title: "Test Case: RP-SRCH-0002 | Search Tag Filtering Processing"
+ID: "RP-PRF-0009"
+Title: "RP-PRF-0009 — Become a Seller (Validation & Restrictions)"
 Priority: "Medium"
 Status: "draft"
 Automated: "no"
@@ -12,15 +12,17 @@ Postconditions: |
   - Verify environment returned to pre-test state before running subsequent tests.
 ---
 
-# Test Case: RP-SRCH-0002 | Search Tag Filtering Processing
+# RP-PRF-0009 — Become a Seller (Validation & Restrictions)
 
-**Summary:** Verify that updating explicit filter criterion filters listings dynamically in the user panel.
+**Summary:** Verify validation and restrictions during seller upgrade.  
 
-**Preconditions:** User workspace is currently viewing active search results.
+**Preconditions:** Authenticated account with Standard Client type.
 
 | # | Step Actions | Expected Results |
-|---|---|---|
-| 1 | Toggle and select available category metadata criteria filter choices (e.g., specific art style, art type, pricing boundaries). | System processes the filter parameters and restricts the active records matching the selections. |
+|---|--------------|------------------|
+| 1 | Click “Become a Seller” without filling required fields | Error messages displayed, form not submitted |
+| 2 | Attempt to upgrade with invalid data (e.g., invalid ID number) | Validation error displayed |
+| 3 | Attempt to upgrade when already a Seller | “Already a Seller” message displayed, no duplicate upgrade |
 
 ## Postconditions
 

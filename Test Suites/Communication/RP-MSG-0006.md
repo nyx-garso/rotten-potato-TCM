@@ -1,6 +1,6 @@
 ---
-ID: "RP-SRCH-0002"
-Title: "Test Case: RP-SRCH-0002 | Search Tag Filtering Processing"
+ID: "RP-MSG-0006"
+Title: "Test Case: RP-MSG-0006 | Remote Peer Handshake Acceptance Verification"
 Priority: "Medium"
 Status: "draft"
 Automated: "no"
@@ -12,15 +12,15 @@ Postconditions: |
   - Verify environment returned to pre-test state before running subsequent tests.
 ---
 
-# Test Case: RP-SRCH-0002 | Search Tag Filtering Processing
+# Test Case: RP-MSG-0006 | Remote Peer Handshake Acceptance Verification
 
-**Summary:** Verify that updating explicit filter criterion filters listings dynamically in the user panel.
+**Summary:** Verify that responding positively to inbound signals changes system layouts to media stream views.
 
-**Preconditions:** User workspace is currently viewing active search results.
+**Preconditions:** Incoming calling stream signals are processing on a peer account endpoint.
 
 | # | Step Actions | Expected Results |
 |---|---|---|
-| 1 | Toggle and select available category metadata criteria filter choices (e.g., specific art style, art type, pricing boundaries). | System processes the filter parameters and restricts the active records matching the selections. |
+| 1 | Trigger the accept handshake routine control from the targeted called account endpoint device context. | System updates screen views to display the active call page workspace, rendering data from active video and audio inputs if accessible. |
 
 ## Postconditions
 
