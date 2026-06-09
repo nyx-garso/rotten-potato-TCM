@@ -1,6 +1,6 @@
 ---
-ID: "RP-MSG-0006"
-Title: "Test Case: RP-MSG-0006 | Inbox Incoming Message Rendering"
+ID: "RP-MSG-0007"
+Title: "Test Case: RP-MSG-0007 | Inbox Incoming Message Rendering"
 Priority: "High"
 Status: "draft"
 Automated: "no"
@@ -12,7 +12,7 @@ Postconditions: |
   - Verify environment returned to pre-test state before running subsequent tests.
 ---
 
-# Test Case: RP-MSG-0006 | Inbox Incoming Message Rendering
+# Test Case: RP-MSG-0007 | Inbox Incoming Message Rendering
 
 **Summary:** Verify that new inbound messages appear in the inbox conversation thread in real time.
 
