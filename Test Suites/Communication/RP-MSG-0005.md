@@ -1,6 +1,6 @@
 ---
-ID: "RP-MSG-0004"
-Title: "Test Case: RP-MSG-0004 | Message Sending Procedure"
+ID: "RP-MSG-0005"
+Title: "Test Case: RP-MSG-0005 | Message Sending Procedure"
 Priority: "High"
 Status: "draft"
 Automated: "no"
@@ -12,7 +12,7 @@ Postconditions: |
   - Verify environment returned to pre-test state before running subsequent tests.
 ---
 
-# Test Case: RP-MSG-0004 | Message Sending Procedure
+# Test Case: RP-MSG-0005 | Message Sending Procedure
 
 **Summary:** Verify that users can send messages either through the Messages tab or via the modal popup in the Top Artist sidebar.
 

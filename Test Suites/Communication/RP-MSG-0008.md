@@ -1,6 +1,6 @@
 ---
-ID: "RP-MSG-0007"
-Title: "Test Case: RP-MSG-0007 | Sidebar Modal Incoming Message Notification"
+ID: "RP-MSG-0008"
+Title: "Test Case: RP-MSG-0008 | Sidebar Modal Incoming Message Notification"
 Priority: "Medium"
 Status: "draft"
 Automated: "no"
@@ -12,7 +12,7 @@ Postconditions: |
   - Verify environment returned to pre-test state before running subsequent tests.
 ---
 
-# Test Case: RP-MSG-0007 | Sidebar Modal Incoming Message Notification
+# Test Case: RP-MSG-0008 | Sidebar Modal Incoming Message Notification
 
 **Summary:** Verify that when a message is received from a Top Artist sidebar conversation, the modal popup or inbox updates accordingly.
 
