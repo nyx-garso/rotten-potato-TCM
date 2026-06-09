@@ -1,7 +1,7 @@
 ---
-ID: "RP-MSG-0007"
-Title: "Test Case: RP-MSG-0007 | Inbox Landing and Empty Conversation State"
-Priority: "Medium"
+ID: "RP-MSG-0006"
+Title: "Test Case: RP-MSG-0006 | Inbox Incoming Message Rendering"
+Priority: "High"
 Status: "draft"
 Automated: "no"
 Owner: ""
@@ -12,20 +12,20 @@ Postconditions: |
   - Verify environment returned to pre-test state before running subsequent tests.
 ---
 
-# Test Case: RP-MSG-0007 | Inbox Landing and Empty Conversation State
+# Test Case: RP-MSG-0006 | Inbox Incoming Message Rendering
 
-**Summary:** Verify that the inbox page loads with its search field and empty-state messaging when no conversations exist.
+**Summary:** Verify that new inbound messages appear in the inbox conversation thread in real time.
 
-**Preconditions:** Authenticated user session is available.
+**Preconditions:** Authenticated user session is active with inbox open.
 
 | # | Step Actions | Expected Results |
-|---|---|---|
-| 1 | Click the Messages button from the main navigation. | System opens the inbox view with the conversation search field and conversation panel layout visible. |
-| 2 | Observe the conversation list area when no threads are available. | System displays the empty-state message instead of a broken or blank conversation panel. |
+|---|--------------|------------------|
+| 1 | Log in as `testuser1@test.com`. | Inbox view is accessible. |
+| 2 | From another account (e.g., `testuser2@test.com`), send a message to testuser1. | System displays the new message in the active conversation thread without requiring manual refresh. |
+| 3 | Observe the conversation panel. | Message is appended chronologically, with sender identity and timestamp visible. |
 
 ## Postconditions
 
 - Tested on https://rotten-potato-tau.vercel.app/homepage using account testuser1@test.com (password: testuser1).
 - Cleanup: log out after the test; remove or revert any test data created (posts, requests, payments, profile changes)
 - Verify environment returned to pre-test state before running subsequent tests.
-
