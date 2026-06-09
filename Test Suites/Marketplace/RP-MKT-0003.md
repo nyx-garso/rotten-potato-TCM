@@ -1,6 +1,6 @@
 ---
-ID: "RP-REV-0003"
-Title: "Test Case: RP-REV-0003 | Rating Metadata Follows Search Results"
+ID: "RP-MKT-0003"
+Title: "Test Case: RP-MKT-0003 | Ask Artist Control Availability and Browse Stability"
 Priority: "Medium"
 Status: "draft"
 Automated: "no"
@@ -12,15 +12,16 @@ Postconditions: |
   - Verify environment returned to pre-test state before running subsequent tests.
 ---
 
-# Test Case: RP-REV-0003 | Rating Metadata Follows Search Results
+# Test Case: RP-MKT-0003 | Ask Artist Control Availability and Browse Stability
 
-**Summary:** Verify that rating metadata stays attached to the matching artwork card after a search.
+**Summary:** Verify that marketplace artwork cards expose an Ask Artist action and keep the browse layout stable.
 
-**Preconditions:** Marketplace catalog search field is responsive.
+**Preconditions:** Marketplace catalog is loaded and an artwork card is visible.
 
 | # | Step Actions | Expected Results |
 |---|---|---|
-| 1 | Search for a valid artwork name or artist name. | System returns the matching artwork card with its rating metadata still visible. |
+| 1 | Inspect the visible artwork card actions. | System displays the Ask Artist control alongside the Buy action. |
+| 2 | Use the Ask Artist control. | System keeps the user on the Marketplace browse surface without breaking the catalog layout. |
 
 ## Postconditions
 

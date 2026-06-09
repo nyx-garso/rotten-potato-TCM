@@ -1,6 +1,6 @@
 ---
-ID: "RP-REV-0003"
-Title: "Test Case: RP-REV-0003 | Rating Metadata Follows Search Results"
+ID: "RP-MKT-0002"
+Title: "Test Case: RP-MKT-0002 | Artwork Price and Buy Control Visibility"
 Priority: "Medium"
 Status: "draft"
 Automated: "no"
@@ -12,15 +12,15 @@ Postconditions: |
   - Verify environment returned to pre-test state before running subsequent tests.
 ---
 
-# Test Case: RP-REV-0003 | Rating Metadata Follows Search Results
+# Test Case: RP-MKT-0002 | Artwork Price and Buy Control Visibility
 
-**Summary:** Verify that rating metadata stays attached to the matching artwork card after a search.
+**Summary:** Verify that marketplace artwork cards display the price and Buy control in the live release.
 
-**Preconditions:** Marketplace catalog search field is responsive.
+**Preconditions:** Authenticated user session is available and the Marketplace catalog is loaded.
 
 | # | Step Actions | Expected Results |
 |---|---|---|
-| 1 | Search for a valid artwork name or artist name. | System returns the matching artwork card with its rating metadata still visible. |
+| 1 | Open the Marketplace view from the main navigation. | System renders artwork cards with visible price metadata and a Buy control. |
 
 ## Postconditions
 

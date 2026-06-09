@@ -1,4 +1,4 @@
-# Requirements Traceability Matrix (RTM) - Rotten Potato (RP.010.001)
+﻿# Requirements Traceability Matrix (RTM) - Rotten Potato (RP.010.001)
 
 | Requirement ID | Module | Description | Linked Test Cases |
 | :--- | :--- | :--- | :--- |
@@ -14,9 +14,13 @@
 | **SRCH-02** | Discovery and Navigation | Dynamic Filter Tags Processing | **[RP-SRCH-0002](Test%20Suites/Discovery-and-Navigation/RP-SRCH-0002.md)** |
 | **SRCH-03** | Discovery and Navigation | Interactive Result Cards (Hover and Selection Views) | **[RP-SRCH-0003](Test%20Suites/Discovery-and-Navigation/RP-SRCH-0003.md)**, **[RP-SRCH-0004](Test%20Suites/Discovery-and-Navigation/RP-SRCH-0004.md)** |
 | **MKT-01** | Marketplace | Art Catalog Browsing, Search, Filter, and Sort Controls | **[RP-MKT-0001](Test%20Suites/Marketplace/RP-MKT-0001.md)**, **[RP-MKT-0002](Test%20Suites/Marketplace/RP-MKT-0002.md)** |
-| **PAY-01** | Financials | Shopping Cart Display and Selection Framework | **[RP-PAY-0001](Test%20Suites/Financials/RP-PAY-0001.md)**, **[RP-PAY-0002](Test%20Suites/Financials/RP-PAY-0002.md)** |
-| **PAY-02** | Financials | Shipping Validation and Delivery Parameters | **[RP-PAY-0003](Test%20Suites/Financials/RP-PAY-0003.md)**, **[RP-PAY-0004](Test%20Suites/Financials/RP-PAY-0004.md)** |
-| **PAY-03** | Financials | Payment Channel Ingestion & Final Review Cycles | **[RP-PAY-0005](Test%20Suites/Financials/RP-PAY-0005.md)**, **[RP-PAY-0006](Test%20Suites/Financials/RP-PAY-0006.md)**, **[RP-PAY-0007](Test%20Suites/Financials/RP-PAY-0007.md)** |
+| **MKT-02** | Marketplace | Artwork Price and Buy Control Visibility | **[RP-MKT-0002](Test%20Suites/Marketplace/RP-MKT-0002.md)** |
+| **MKT-03** | Marketplace | Ask Artist Control Availability and Browse Stability | **[RP-MKT-0003](Test%20Suites/Marketplace/RP-MKT-0003.md)** |
+| **PAY-01** | Financials | Marketplace Add-to-Cart and Shopping Cart Display | **[RP-PAY-0001](Test%20Suites/Financials/RP-PAY-0001.md)**, **[RP-PAY-0002](Test%20Suites/Financials/RP-PAY-0002.md)** |
+| **PAY-02** | Financials | Selective Checkout, Quantity Updates, and Cart Cleanup Controls | **[RP-PAY-0003](Test%20Suites/Financials/RP-PAY-0003.md)**, **[RP-PAY-0004](Test%20Suites/Financials/RP-PAY-0004.md)**, **[RP-PAY-0005](Test%20Suites/Financials/RP-PAY-0005.md)**, **[RP-PAY-0006](Test%20Suites/Financials/RP-PAY-0006.md)** |
+| **PAY-03** | Financials | PayMongo Checkout Session and Paid Webhook Commit Flow | **[RP-PAY-0007](Test%20Suites/Financials/RP-PAY-0007.md)**, **[RP-PAY-0008](Test%20Suites/Financials/RP-PAY-0008.md)** |
+| **PAY-04** | Financials | Commission Deposit Payment Initialization and Paid Commit | **[RP-PAY-0009](Test%20Suites/Financials/RP-PAY-0009.md)**, **[RP-PAY-0010](Test%20Suites/Financials/RP-PAY-0010.md)** |
+| **PAY-05** | Financials | Artist Ready-for-Final-Payment Gate and Commission Final Payment Commit | **[RP-PAY-0011](Test%20Suites/Financials/RP-PAY-0011.md)**, **[RP-PAY-0012](Test%20Suites/Financials/RP-PAY-0012.md)** |
 | **FEED-01** | Social-and-Community | Artwork Publication and Timeline Injection | **[RP-FEED-0001](Test%20Suites/Social-and-Community/RP-FEED-0001.md)**, **[RP-FEED-0002](Test%20Suites/Social-and-Community/RP-FEED-0002.md)** |
 | **FEED-02** | Social-and-Community | Reaction Handlers and Targeted System Notifications | **[RP-FEED-0003](Test%20Suites/Social-and-Community/RP-FEED-0003.md)** |
 | **FEED-03** | Social-and-Community | Core Social Interaction Hooks (Comments & Shares) | **[RP-FEED-0004](Test%20Suites/Social-and-Community/RP-FEED-0004.md)**, **[RP-FEED-0005](Test%20Suites/Social-and-Community/RP-FEED-0005.md)**, **[RP-FEED-0006](Test%20Suites/Social-and-Community/RP-FEED-0006.md)** |
@@ -24,8 +28,8 @@
 | **MSG-02** | Communication | Message Dispatches and Structural File Attachments | **[RP-MSG-0003](Test%20Suites/Communication/RP-MSG-0003.md)**, **[RP-MSG-0004](Test%20Suites/Communication/RP-MSG-0004.md)** |
 | **MSG-03** | Communication | RTC Connection Pipelines (Voice, Video, & Call States) | **[RP-MSG-0005](Test%20Suites/Communication/RP-MSG-0005.md)**, **[RP-MSG-0006](Test%20Suites/Communication/RP-MSG-0006.md)** |
 | **MSG-04** | Communication | Inbox Search and Empty Conversation State Handling | **[RP-MSG-0007](Test%20Suites/Communication/RP-MSG-0007.md)**, **[RP-MSG-0008](Test%20Suites/Communication/RP-MSG-0008.md)** |
-| **COMM-01** | Commission-Requests | Client Commission Board Submissions & Lifecycle Management | **[RP-COMM-0001](Test%20Suites/Commission-Requests/RP-COMM-0001.md)**, **[RP-COMM-0002](Test%20Suites/Commission-Requests/RP-COMM-0002.md)** |
-| **COMM-02** | Commission-Requests | Artist Engagements and Inter-Module Workflow Routing | **[RP-COMM-0003](Test%20Suites/Commission-Requests/RP-COMM-0003.md)**, **[RP-COMM-0004](Test%20Suites/Commission-Requests/RP-COMM-0004.md)** |
-| **COMM-03** | Commission-Requests | Commission Board Browsing, Tabs, and Request List Segmentation | **[RP-COMM-0005](Test%20Suites/Commission-Requests/RP-COMM-0005.md)**, **[RP-COMM-0006](Test%20Suites/Commission-Requests/RP-COMM-0006.md)** |
-| **REV-01** | Reputation | Rating Overlay Engine & Profile Metric Ingestion | **[RP-REV-0001](Test%20Suites/Reputation/RP-REV-0001.md)**, **[RP-REV-0002](Test%20Suites/Reputation/RP-REV-0002.md)**, **[RP-REV-0003](Test%20Suites/Reputation/RP-REV-0003.md)** |
-| **REV-02** | Reputation | Community Peer Review Curation (Helpful & Moderation States) | **[RP-REV-0004](Test%20Suites/Reputation/RP-REV-0004.md)**, **[RP-REV-0005](Test%20Suites/Reputation/RP-REV-0005.md)** |
+| **COMM-01** | Commission-Requests | Commissioner Request Creation and Open Request Listing | **[RP-COMM-0001](Test%20Suites/Commission-Requests/RP-COMM-0001.md)**, **[RP-COMM-0002](Test%20Suites/Commission-Requests/RP-COMM-0002.md)** |
+| **COMM-02** | Commission-Requests | Artist Account Setup and Offer Submission | **[RP-COMM-0003](Test%20Suites/Commission-Requests/RP-COMM-0003.md)**, **[RP-COMM-0004](Test%20Suites/Commission-Requests/RP-COMM-0004.md)** |
+| **COMM-03** | Commission-Requests | Commissioner Offer Review, Artist Hiring, and Deposit-Ready State | **[RP-COMM-0005](Test%20Suites/Commission-Requests/RP-COMM-0005.md)**, **[RP-COMM-0006](Test%20Suites/Commission-Requests/RP-COMM-0006.md)** |
+| **REV-01** | Reputation | Artwork Rating Score and Count Visibility | **[RP-REV-0001](Test%20Suites/Reputation/RP-REV-0001.md)**, **[RP-REV-0002](Test%20Suites/Reputation/RP-REV-0002.md)**, **[RP-REV-0003](Test%20Suites/Reputation/RP-REV-0003.md)** |
+| **REV-02** | Reputation | Rating Metadata Stability Across Browse States | **[RP-REV-0004](Test%20Suites/Reputation/RP-REV-0004.md)**, **[RP-REV-0005](Test%20Suites/Reputation/RP-REV-0005.md)** |
