@@ -1,6 +1,6 @@
 ---
-ID: "RP-MSG-0008"
-Title: "Test Case: RP-MSG-0008 | Inbox Conversation Search Handling"
+ID: "RP-MSG-0003"
+Title: "Test Case: RP-MSG-0003 | Inbox Conversation Search Handling"
 Priority: "Medium"
 Status: "draft"
 Automated: "no"
@@ -12,7 +12,7 @@ Postconditions: |
   - Verify environment returned to pre-test state before running subsequent tests.
 ---
 
-# Test Case: RP-MSG-0008 | Inbox Conversation Search Handling
+# Test Case: RP-MSG-0003 | Inbox Conversation Search Handling
 
 **Summary:** Verify that inbox search input accepts text and updates the visible conversation results state.
 
