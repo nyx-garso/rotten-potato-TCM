@@ -1,6 +1,6 @@
 ---
-ID: "RP-MSG-0005"
-Title: "Test Case: RP-MSG-0005 | Top Artist Sidebar Messaging Option"
+ID: "RP-MSG-0006"
+Title: "Test Case: RP-MSG-0006 | Top Artist Sidebar Messaging Option"
 Priority: "Medium"
 Status: "draft"
 Automated: "no"
@@ -12,7 +12,7 @@ Postconditions: |
   - Verify environment returned to pre-test state before running subsequent tests.
 ---
 
-# Test Case: RP-MSG-0005 | Top Artist Sidebar Messaging Option
+# Test Case: RP-MSG-0006 | Top Artist Sidebar Messaging Option
 
 **Summary:** Verify that clicking the messaging option in the Top Artist sidebar initializes a conversation thread with the selected artist.
 
