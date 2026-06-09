@@ -1,6 +1,6 @@
 ---
-ID: "RP-MSG-0003"
-Title: "Test Case: RP-MSG-0003 | Conversation Initialization Prompt"
+ID: "RP-MSG-0004"
+Title: "Test Case: RP-MSG-0004 | Conversation Initialization Prompt"
 Priority: "Medium"
 Status: "draft"
 Automated: "no"
@@ -12,7 +12,7 @@ Postconditions: |
   - Verify environment returned to pre-test state before running subsequent tests.
 ---
 
-# Test Case: RP-MSG-0003 | Conversation Initialization Prompt
+# Test Case: RP-MSG-0004 | Conversation Initialization Prompt
 
 **Summary:** Verify that the inbox provides guidance when no conversation is selected.
 

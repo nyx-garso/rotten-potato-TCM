@@ -24,10 +24,12 @@
 | **FEED-01** | Social-and-Community | Artwork Publication and Timeline Injection | **[RP-FEED-0001](Test%20Suites/Social-and-Community/RP-FEED-0001.md)**, **[RP-FEED-0002](Test%20Suites/Social-and-Community/RP-FEED-0002.md)** |
 | **FEED-02** | Social-and-Community | Reaction Handlers and Targeted System Notifications | **[RP-FEED-0003](Test%20Suites/Social-and-Community/RP-FEED-0003.md)** |
 | **FEED-03** | Social-and-Community | Core Social Interaction Hooks (Comments & Shares) | **[RP-FEED-0004](Test%20Suites/Social-and-Community/RP-FEED-0004.md)**, **[RP-FEED-0005](Test%20Suites/Social-and-Community/RP-FEED-0005.md)**, **[RP-FEED-0006](Test%20Suites/Social-and-Community/RP-FEED-0006.md)** |
-| **MSG-01** | Communication | Active User Directory Querying and Context Loading | **[RP-MSG-0001](Test%20Suites/Communication/RP-MSG-0001.md)**, **[RP-MSG-0002](Test%20Suites/Communication/RP-MSG-0002.md)** |
-| **MSG-02** | Communication | Message Dispatches and Structural File Attachments | **[RP-MSG-0003](Test%20Suites/Communication/RP-MSG-0003.md)**, **[RP-MSG-0004](Test%20Suites/Communication/RP-MSG-0004.md)** |
-| **MSG-03** | Communication | RTC Connection Pipelines (Voice, Video, & Call States) | **[RP-MSG-0005](Test%20Suites/Communication/RP-MSG-0005.md)**, **[RP-MSG-0006](Test%20Suites/Communication/RP-MSG-0006.md)** |
-| **MSG-04** | Communication | Inbox Search and Empty Conversation State Handling | **[RP-MSG-0007](Test%20Suites/Communication/RP-MSG-0007.md)**, **[RP-MSG-0008](Test%20Suites/Communication/RP-MSG-0008.md)** |
+| **MSG-01**     | Communication | Inbox Empty State Rendering | **[RP-MSG-0001](Test%20Suites/Communication/RP-MSG-0001.md)** |
+| **MSG-02**     | Communication | Inbox Search & Conversation Thread Restorations | **[RP-MSG-0002](Test%20Suites/Communication/RP-MSG-0002.md)**, **[RP-MSG-0008](Test%20Suites/Communication/RP-MSG-0008.md)** |
+| **MSG-03**     | Communication | Conversation Initialization Prompt | **[RP-MSG-0003](Test%20Suites/Communication/RP-MSG-0003.md)** |
+| **MSG-04**     | Communication | Message Sending Procedure | **[RP-MSG-0004](Test%20Suites/Communication/RP-MSG-0004.md)** |
+| **MSG-05**     | Communication | Top Artist Sidebar Messaging Option | **[RP-MSG-0005](Test%20Suites/Communication/RP-MSG-0005.md)** |
+| **MSG-06**     | Communication | Receiving Messages (Inbox & Sidebar Modal) | **[RP-MSG-0006](Test%20Suites/Communication/RP-MSG-0006.md)**, **[RP-MSG-0007](Test%20Suites/Communication/RP-MSG-0007.md)** |
 | **COMM-01** | Commission-Requests | Commissioner Request Creation and Open Request Listing | **[RP-COMM-0001](Test%20Suites/Commission-Requests/RP-COMM-0001.md)**, **[RP-COMM-0002](Test%20Suites/Commission-Requests/RP-COMM-0002.md)** |
 | **COMM-02** | Commission-Requests | Artist Account Setup and Offer Submission | **[RP-COMM-0003](Test%20Suites/Commission-Requests/RP-COMM-0003.md)**, **[RP-COMM-0004](Test%20Suites/Commission-Requests/RP-COMM-0004.md)** |
 | **COMM-03** | Commission-Requests | Commissioner Offer Review, Artist Hiring, and Deposit-Ready State | **[RP-COMM-0005](Test%20Suites/Commission-Requests/RP-COMM-0005.md)**, **[RP-COMM-0006](Test%20Suites/Commission-Requests/RP-COMM-0006.md)** |

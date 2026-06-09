@@ -20,14 +20,14 @@ Test suites
 		- [RP-COMM-0005](Test%20Suites/Commission-Requests/RP-COMM-0005.md) — Commissioner Reviews Incoming Offers
 		- [RP-COMM-0006](Test%20Suites/Commission-Requests/RP-COMM-0006.md) — Commissioner Hires Artist
 	- Communication
-		- [RP-MSG-0001](Test%20Suites/Communication/RP-MSG-0001.md) — Active User Directory & Context
-		- [RP-MSG-0002](Test%20Suites/Communication/RP-MSG-0002.md) — Active User Directory & Context
-		- [RP-MSG-0003](Test%20Suites/Communication/RP-MSG-0003.md) — Message Dispatch & Attachments
-		- [RP-MSG-0004](Test%20Suites/Communication/RP-MSG-0004.md) — Message Dispatch & Attachments
-		- [RP-MSG-0005](Test%20Suites/Communication/RP-MSG-0005.md) — RTC Connection Pipelines
-		- [RP-MSG-0006](Test%20Suites/Communication/RP-MSG-0006.md) — RTC Connection Pipelines
-		- [RP-MSG-0007](Test%20Suites/Communication/RP-MSG-0007.md) — Inbox Search & Empty State
-		- [RP-MSG-0008](Test%20Suites/Communication/RP-MSG-0008.md) — Inbox Search & Empty State
+		- [RP-MSG-0001](Test%20Suites/Communication/RP-MSG-0001.md) — Inbox Empty State Rendering
+		- [RP-MSG-0002](Test%20Suites/Communication/RP-MSG-0002.md) — Inbox Search Field Availability / Conversation Thread Restorations
+		- [RP-MSG-0003](Test%20Suites/Communication/RP-MSG-0003.md) — Conversation Initialization Prompt
+		- [RP-MSG-0004](Test%20Suites/Communication/RP-MSG-0004.md) — Message Sending Procedure
+		- [RP-MSG-0005](Test%20Suites/Communication/RP-MSG-0005.md) — Top Artist Sidebar Messaging Option
+		- [RP-MSG-0006](Test%20Suites/Communication/RP-MSG-0006.md) — Inbox Incoming Message Rendering
+		- [RP-MSG-0007](Test%20Suites/Communication/RP-MSG-0007.md) — Sidebar Modal Incoming Message Notification
+		- [RP-MSG-0008](Test%20Suites/Communication/RP-MSG-0008.md) — Inbox Conversation Search Handling
 	- Discovery and Navigation
 		- [RP-SRCH-0001](Test%20Suites/Discovery-and-Navigation/RP-SRCH-0001.md) — Global Text Search
 		- [RP-SRCH-0002](Test%20Suites/Discovery-and-Navigation/RP-SRCH-0002.md) — Dynamic Filter Tags
