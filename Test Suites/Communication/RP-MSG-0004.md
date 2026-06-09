@@ -1,6 +1,6 @@
 ---
-ID: "RP-MSG-0004"
-Title: "Test Case: RP-MSG-0004 | Local Binary Object Media Upload Gateways"
+ID: "RP-MSG-0003"
+Title: "Test Case: RP-MSG-0003 | Conversation Initialization Prompt"
 Priority: "Medium"
 Status: "draft"
 Automated: "no"
@@ -12,19 +12,19 @@ Postconditions: |
   - Verify environment returned to pre-test state before running subsequent tests.
 ---
 
-# Test Case: RP-MSG-0004 | Local Binary Object Media Upload Gateways
+# Test Case: RP-MSG-0003 | Conversation Initialization Prompt
 
-**Summary:** Verify that clicking file attachment indicators displays system document selection tools.
+**Summary:** Verify that the inbox provides guidance when no conversation is selected.
 
-**Preconditions:** Communication interface session is initialized.
+**Preconditions:** Inbox page is open with no active thread.
 
 | # | Step Actions | Expected Results |
-|---|---|---|
-| 1 | Click the file attachment paperclip component link node inside the chat input layout. | System opens local storage access dialog interfaces, allowing selections of photos or videos for upload. |
+|---|--------------|------------------|
+| 1 | Open the Messages section without selecting a recipient. | System displays instructional text *“Select a friend from the list on the left to start sharing your art journey.”* |
+| 2 | Observe the conversation panel. | Panel remains inactive until a recipient is chosen. |
 
 ## Postconditions
 
 - Tested on https://rotten-potato-tau.vercel.app/homepage using account testuser1@test.com (password: testuser1).
 - Cleanup: log out after the test; remove or revert any test data created (posts, requests, payments, profile changes)
 - Verify environment returned to pre-test state before running subsequent tests.
-

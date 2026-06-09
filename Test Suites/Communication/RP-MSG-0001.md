@@ -1,6 +1,6 @@
 ---
 ID: "RP-MSG-0001"
-Title: "Test Case: RP-MSG-0001 | Target User Profile Lookup Execution"
+Title: "Test Case: RP-MSG-0001 | Inbox Empty State Rendering"
 Priority: "Medium"
 Status: "draft"
 Automated: "no"
@@ -12,15 +12,16 @@ Postconditions: |
   - Verify environment returned to pre-test state before running subsequent tests.
 ---
 
-# Test Case: RP-MSG-0001 | Target User Profile Lookup Execution
+# Test Case: RP-MSG-0001 | Inbox Empty State Rendering
 
-**Summary:** Verify that inputting user parameters inside search fields surfaces relevant profile directories.
+**Summary:** Verify that the inbox loads with a search field and displays an empty-state message when no conversations exist.
 
-**Preconditions:** Directory lookup text input element is loaded.
+**Preconditions:** Authenticated user session is active.
 
 | # | Step Actions | Expected Results |
-|---|---|---|
-| 1 | Provide a valid search text query criteria inside the messaging user search element, then hit the Enter key. | System updates the workspace sub-panel layout view to render profile matches. |
+|---|--------------|------------------|
+| 1 | Navigate to the Messages section from the main navigation. | Inbox view opens with search field visible. |
+| 2 | Observe the conversation list area when no threads are available. | System displays the empty-state message *“No conversations found”*. |
 
 ## Postconditions
 

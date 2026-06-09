@@ -1,6 +1,6 @@
 ---
-ID: "RP-MSG-0002"
-Title: "Test Case: RP-MSG-0002 | Conversation Thread Storage Restorations"
+ID: "RP-MSG-0008"
+Title: "Test Case: RP-MSG-0008 | Inbox Conversation Search Handling"
 Priority: "Medium"
 Status: "draft"
 Automated: "no"
@@ -12,15 +12,16 @@ Postconditions: |
   - Verify environment returned to pre-test state before running subsequent tests.
 ---
 
-# Test Case: RP-MSG-0002 | Conversation Thread Storage Restorations
+# Test Case: RP-MSG-0008 | Inbox Conversation Search Handling
 
-**Summary:** Verify that selecting user listings initializes target thread messaging channels and maps history.
+**Summary:** Verify that inbox search input accepts text and updates the visible conversation results state.
 
-**Preconditions:** System user profile directories have loaded output entries.
+**Preconditions:** Inbox page is open and the search box is enabled.
 
 | # | Step Actions | Expected Results |
 |---|---|---|
-| 1 | Click and select a specific recipient node listing selection from the generated lookup options. | System maps security variables, draws from storage metrics, and loads the conversation historical log component window. |
+| 1 | Type a valid contact name or conversation keyword into the inbox search field. | System accepts the query and updates the conversation results state based on the entered term. |
+| 2 | Submit a query that returns no matching conversations. | System shows a no-results state without breaking the inbox layout. |
 
 ## Postconditions
 
