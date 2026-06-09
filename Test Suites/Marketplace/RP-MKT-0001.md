@@ -1,6 +1,6 @@
 ---
-ID: "RP-SRCH-0002"
-Title: "Test Case: RP-SRCH-0002 | Search Tag Filtering Processing"
+ID: "RP-MKT-0001"
+Title: "Test Case: RP-MKT-0001 | Marketplace Landing and Search Controls"
 Priority: "Medium"
 Status: "draft"
 Automated: "no"
@@ -12,15 +12,16 @@ Postconditions: |
   - Verify environment returned to pre-test state before running subsequent tests.
 ---
 
-# Test Case: RP-SRCH-0002 | Search Tag Filtering Processing
+# Test Case: RP-MKT-0001 | Marketplace Landing and Search Controls
 
-**Summary:** Verify that updating explicit filter criterion filters listings dynamically in the user panel.
+**Summary:** Verify that the Marketplace page loads with the catalog search, category, and sort controls visible.
 
-**Preconditions:** User workspace is currently viewing active search results.
+**Preconditions:** Authenticated user session is available.
 
 | # | Step Actions | Expected Results |
 |---|---|---|
-| 1 | Toggle and select available category metadata criteria filter choices (e.g., specific art style, art type, pricing boundaries). | System processes the filter parameters and restricts the active records matching the selections. |
+| 1 | Click the Marketplace button from the main navigation. | System opens the Marketplace catalog view with the browse header, search field, category selector, and sort selector visible. |
+| 2 | Click inside the search box and enter a valid artwork or artist query. | System accepts the query and begins updating the catalog results area for the matching records. |
 
 ## Postconditions
 

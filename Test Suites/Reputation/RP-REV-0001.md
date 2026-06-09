@@ -1,6 +1,6 @@
 ---
-ID: "RP-SRCH-0002"
-Title: "Test Case: RP-SRCH-0002 | Search Tag Filtering Processing"
+ID: "RP-REV-0001"
+Title: "Test Case: RP-REV-0001 | Artwork Rating Visibility"
 Priority: "Medium"
 Status: "draft"
 Automated: "no"
@@ -12,15 +12,15 @@ Postconditions: |
   - Verify environment returned to pre-test state before running subsequent tests.
 ---
 
-# Test Case: RP-SRCH-0002 | Search Tag Filtering Processing
+# Test Case: RP-REV-0001 | Artwork Rating Visibility
 
-**Summary:** Verify that updating explicit filter criterion filters listings dynamically in the user panel.
+**Summary:** Verify that marketplace artwork cards display rating metadata in the live release.
 
-**Preconditions:** User workspace is currently viewing active search results.
+**Preconditions:** Marketplace catalog is loaded and at least one artwork card is visible.
 
 | # | Step Actions | Expected Results |
 |---|---|---|
-| 1 | Toggle and select available category metadata criteria filter choices (e.g., specific art style, art type, pricing boundaries). | System processes the filter parameters and restricts the active records matching the selections. |
+| 1 | Inspect a visible artwork card in the Marketplace. | System shows the star rating value and review count for the artwork. |
 
 ## Postconditions
 

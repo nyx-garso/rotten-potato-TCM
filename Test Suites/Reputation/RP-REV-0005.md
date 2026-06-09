@@ -1,6 +1,6 @@
 ---
-ID: "RP-SRCH-0002"
-Title: "Test Case: RP-SRCH-0002 | Search Tag Filtering Processing"
+ID: "RP-REV-0005"
+Title: "Test Case: RP-REV-0005 | Rating Metadata and Price Cohesion"
 Priority: "Medium"
 Status: "draft"
 Automated: "no"
@@ -12,15 +12,15 @@ Postconditions: |
   - Verify environment returned to pre-test state before running subsequent tests.
 ---
 
-# Test Case: RP-SRCH-0002 | Search Tag Filtering Processing
+# Test Case: RP-REV-0005 | Rating Metadata and Price Cohesion
 
-**Summary:** Verify that updating explicit filter criterion filters listings dynamically in the user panel.
+**Summary:** Verify that artwork rating details remain grouped with the title, artist, and price on the marketplace card.
 
-**Preconditions:** User workspace is currently viewing active search results.
+**Preconditions:** Marketplace catalog is loaded and a result card is visible.
 
 | # | Step Actions | Expected Results |
 |---|---|---|
-| 1 | Toggle and select available category metadata criteria filter choices (e.g., specific art style, art type, pricing boundaries). | System processes the filter parameters and restricts the active records matching the selections. |
+| 1 | Inspect a loaded marketplace artwork card after the page finishes rendering. | System presents the artwork title, artist, rating, review count, and price together on the same card. |
 
 ## Postconditions
 

@@ -1,6 +1,6 @@
 ---
-ID: "RP-SRCH-0002"
-Title: "Test Case: RP-SRCH-0002 | Search Tag Filtering Processing"
+ID: "RP-FEED-0002"
+Title: "Test Case: RP-FEED-0002 | Image Canvas Creation and Timeline Injection"
 Priority: "Medium"
 Status: "draft"
 Automated: "no"
@@ -12,15 +12,15 @@ Postconditions: |
   - Verify environment returned to pre-test state before running subsequent tests.
 ---
 
-# Test Case: RP-SRCH-0002 | Search Tag Filtering Processing
+# Test Case: RP-FEED-0002 | Image Canvas Creation and Timeline Injection
 
-**Summary:** Verify that updating explicit filter criterion filters listings dynamically in the user panel.
+**Summary:** Verify that executing a post-publication event injects the post asset into the top of the timeline.
 
-**Preconditions:** User workspace is currently viewing active search results.
+**Preconditions:** Media assets are loaded into form context.
 
 | # | Step Actions | Expected Results |
 |---|---|---|
-| 1 | Toggle and select available category metadata criteria filter choices (e.g., specific art style, art type, pricing boundaries). | System processes the filter parameters and restricts the active records matching the selections. |
+| 1 | Click the designated "Publish Artwork" submit mechanism button. | System commits the media record and description payload data to the timeline databases, making it visible at the top of the chronological community feed. |
 
 ## Postconditions
 

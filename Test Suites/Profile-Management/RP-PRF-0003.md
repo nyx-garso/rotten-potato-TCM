@@ -1,6 +1,6 @@
 ---
-ID: "RP-SRCH-0002"
-Title: "Test Case: RP-SRCH-0002 | Search Tag Filtering Processing"
+ID: "RP-PRF-0003"
+Title: "RP-PRF-0003 — Edit Profile (Persistence)"
 Priority: "Medium"
 Status: "draft"
 Automated: "no"
@@ -12,15 +12,17 @@ Postconditions: |
   - Verify environment returned to pre-test state before running subsequent tests.
 ---
 
-# Test Case: RP-SRCH-0002 | Search Tag Filtering Processing
+# RP-PRF-0003 — Edit Profile (Persistence)
 
-**Summary:** Verify that updating explicit filter criterion filters listings dynamically in the user panel.
+**Summary:** Verify that profile edits persist after saving.  
 
-**Preconditions:** User workspace is currently viewing active search results.
+**Preconditions:** Authenticated account.
 
 | # | Step Actions | Expected Results |
-|---|---|---|
-| 1 | Toggle and select available category metadata criteria filter choices (e.g., specific art style, art type, pricing boundaries). | System processes the filter parameters and restricts the active records matching the selections. |
+|---|--------------|------------------|
+| 1 | Navigate to Edit Profile | Edit form loads |
+| 2 | Change username/email and click Save | Success message displayed |
+| 3 | Reload profile page | Updated values persist |
 
 ## Postconditions
 

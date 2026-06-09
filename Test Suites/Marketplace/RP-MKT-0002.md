@@ -1,6 +1,6 @@
 ---
-ID: "RP-SRCH-0002"
-Title: "Test Case: RP-SRCH-0002 | Search Tag Filtering Processing"
+ID: "RP-MKT-0002"
+Title: "Test Case: RP-MKT-0002 | Artwork Price and Buy Control Visibility"
 Priority: "Medium"
 Status: "draft"
 Automated: "no"
@@ -12,15 +12,15 @@ Postconditions: |
   - Verify environment returned to pre-test state before running subsequent tests.
 ---
 
-# Test Case: RP-SRCH-0002 | Search Tag Filtering Processing
+# Test Case: RP-MKT-0002 | Artwork Price and Buy Control Visibility
 
-**Summary:** Verify that updating explicit filter criterion filters listings dynamically in the user panel.
+**Summary:** Verify that marketplace artwork cards display the price and Buy control in the live release.
 
-**Preconditions:** User workspace is currently viewing active search results.
+**Preconditions:** Authenticated user session is available and the Marketplace catalog is loaded.
 
 | # | Step Actions | Expected Results |
 |---|---|---|
-| 1 | Toggle and select available category metadata criteria filter choices (e.g., specific art style, art type, pricing boundaries). | System processes the filter parameters and restricts the active records matching the selections. |
+| 1 | Open the Marketplace view from the main navigation. | System renders artwork cards with visible price metadata and a Buy control. |
 
 ## Postconditions
 

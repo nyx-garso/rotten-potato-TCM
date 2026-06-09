@@ -1,6 +1,6 @@
 ---
-ID: "RP-SRCH-0002"
-Title: "Test Case: RP-SRCH-0002 | Search Tag Filtering Processing"
+ID: "RP-MSG-0003"
+Title: "Test Case: RP-MSG-0003 | Conversation Initialization Prompt"
 Priority: "Medium"
 Status: "draft"
 Automated: "no"
@@ -12,19 +12,19 @@ Postconditions: |
   - Verify environment returned to pre-test state before running subsequent tests.
 ---
 
-# Test Case: RP-SRCH-0002 | Search Tag Filtering Processing
+# Test Case: RP-MSG-0003 | Conversation Initialization Prompt
 
-**Summary:** Verify that updating explicit filter criterion filters listings dynamically in the user panel.
+**Summary:** Verify that the inbox provides guidance when no conversation is selected.
 
-**Preconditions:** User workspace is currently viewing active search results.
+**Preconditions:** Inbox page is open with no active thread.
 
 | # | Step Actions | Expected Results |
-|---|---|---|
-| 1 | Toggle and select available category metadata criteria filter choices (e.g., specific art style, art type, pricing boundaries). | System processes the filter parameters and restricts the active records matching the selections. |
+|---|--------------|------------------|
+| 1 | Open the Messages section without selecting a recipient. | System displays instructional text *“Select a friend from the list on the left to start sharing your art journey.”* |
+| 2 | Observe the conversation panel. | Panel remains inactive until a recipient is chosen. |
 
 ## Postconditions
 
 - Tested on https://rotten-potato-tau.vercel.app/homepage using account testuser1@test.com (password: testuser1).
 - Cleanup: log out after the test; remove or revert any test data created (posts, requests, payments, profile changes)
 - Verify environment returned to pre-test state before running subsequent tests.
-
