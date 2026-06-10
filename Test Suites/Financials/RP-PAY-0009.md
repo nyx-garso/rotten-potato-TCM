@@ -1,3 +1,25 @@
+---
+ID: RP-PAY-0009
+Title: 'Test Case: RP-PAY-0009 | Commission Deposit Checkout Initialization'
+Priority: Medium
+Status: draft
+Automated: 'no'
+Owner: ''
+Requirements: ''
+Postconditions: '- Tested on https://rotten-potato-tau.vercel.app/homepage using commissioner
+  account testuser1@test.com (password: testuser1).
+
+  - Cleanup: cancel unpaid gateway sessions and remove/revert test payment rows if
+  the deposit checkout is not completed.
+
+  - Keep the accepted commission available for milestone/workspace tests when continuing
+  the suite.
+
+  '
+Test Schedule: 2026/03/23
+---
+
+
 ﻿---
 ID: "RP-PAY-0009"
 Title: "Test Case: RP-PAY-0009 | Commission Deposit Checkout Initialization"

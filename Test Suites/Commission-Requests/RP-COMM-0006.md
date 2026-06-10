@@ -1,3 +1,25 @@
+---
+ID: RP-COMM-0006
+Title: 'Test Case: RP-COMM-0006 | Commissioner Hires Artist'
+Priority: Medium
+Status: draft
+Automated: 'no'
+Owner: ''
+Requirements: ''
+Postconditions: '- Tested on https://rotten-potato-tau.vercel.app/homepage using commissioner
+  account testuser1@test.com (password: testuser1).
+
+  - Cleanup: remove/revert test commission request, commission offers, and related
+  payment setup data after milestone testing is complete.
+
+  - The accepted request should remain available for the next milestone/workspace
+  verification pass.
+
+  '
+Test Schedule: 2026/03/23
+---
+
+
 ﻿---
 ID: "RP-COMM-0006"
 Title: "Test Case: RP-COMM-0006 | Commissioner Hires Artist"

@@ -1,3 +1,23 @@
+---
+ID: RP-COMM-0004
+Title: 'Test Case: RP-COMM-0004 | Artist Sends Commission Offer'
+Priority: Medium
+Status: draft
+Automated: 'no'
+Owner: ''
+Requirements: ''
+Postconditions: '- Tested on https://rotten-potato-tau.vercel.app/homepage using the
+  artist test account created for the commission flow.
+
+  - Cleanup: leave the offer available until the commissioner acceptance test is complete.
+
+  - Log out after testing when no further artist-account tests are queued.
+
+  '
+Test Schedule: 2026/03/23
+---
+
+
 ﻿---
 ID: "RP-COMM-0004"
 Title: "Test Case: RP-COMM-0004 | Artist Sends Commission Offer"

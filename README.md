@@ -114,18 +114,97 @@ Placing this consistently makes it easier to generate inventories or export CSVs
 
 ## Scripts
 
-Two helper scripts are included under `scripts/`:
+### Tester Workflow with Scripts
 
-- `scripts/generate_inventory.py` scans `Test Suites/` and writes `OnTrack TCM - Test Suites.csv` with the current test inventory.
-- `scripts/normalize_frontmatter.py` rewrites each test case frontmatter into valid YAML so editors and parsers can read the files without errors.
+To make updating test cases easier, use the provided scripts and batch file.
 
-Run them from the repository root:
+### Available Scripts
+- **normalize_frontmatter.py**  
+  Ensures all test case files have valid YAML frontmatter.
+- **update_testcase_metadata.py**  
+  Interactive script that lets testers update metadata fields (Test Schedule, Assigned Tester, Date of Execution, Status, Bug ID) directly from the terminal.
+- **generate_inventory.py**  
+  Scans all test cases and produces `OnTrack TCM - Test Suites.csv` with the current inventory.
 
-```bash
-python scripts/generate_inventory.py
-python scripts/normalize_frontmatter.py
-```
+### Batch File
+Run `run_scripts.bat` from the repository root. It provides a menu:
 
-If you change the test case metadata format, rerun both scripts so the CSV and markdown files stay in sync.
+1. Normalize frontmatter  
+2. Update metadata interactively  
+3. Generate inventory CSV  
+4. Run all steps in sequence  
 
+### 1. Normalize frontmatter
+**Purpose:**  
+Ensures every test case `.md` file has valid YAML frontmatter so scripts and editors can parse them consistently.
 
+**Steps:**
+1. The script scans all files under `Test Suites/`.
+2. For each `.md` file, it checks if the file starts with `---` (YAML block).
+3. If frontmatter is missing or malformed, it rewrites it into proper YAML format.
+4. Default fields (like `Test Schedule`, `Assigned Tester`, `Date of Execution`, `Status`, `Bug ID`) are added if they don’t exist.
+5. The file is saved back with corrected frontmatter.
+
+**Result:**  
+All test case files are standardized, preventing parsing errors and ensuring metadata fields are ready for updates.
+
+---
+
+### 2. Update metadata interactively
+**Purpose:**  
+Allows testers to update metadata fields directly from the terminal without editing YAML manually.
+
+**Steps:**
+1. The script lists all test case files in `Test Suites/`.
+2. Tester selects a file by number.
+3. For each metadata field, the script shows the current value and prompts for a new one:
+   - Press **Enter** to keep the current value.
+   - Type a new value to update it.
+4. The script rewrites the frontmatter with the updated values.
+5. Confirmation message shows the update was successful.
+
+**Result:**  
+The chosen test case file now has updated metadata in its frontmatter, ready to be tracked in the spreadsheet.
+
+---
+
+### 3. Generate inventory CSV
+**Purpose:**  
+Creates a spreadsheet (`OnTrack TCM - Test Suites.csv`) with all test cases and their metadata.
+
+**Steps:**
+1. The script scans all `.md` files under `Test Suites/`.
+2. It extracts the YAML frontmatter from each file.
+3. It collects key fields:  
+   - Test Case ID  
+   - Title  
+   - Test Schedule  
+   - Assigned Tester  
+   - Date of Execution  
+   - Status  
+   - Bug ID  
+4. It writes all collected data into a CSV file named `OnTrack TCM - Test Suites.csv`.
+
+**Result:**  
+A complete spreadsheet inventory of all test cases, which can be opened in Excel or Google Sheets for tracking execution results and bugs.
+
+---
+
+### Example Workflow
+1. Run `run_scripts.bat` and choose **1** to normalize frontmatter.  
+2. Choose **2** to update metadata for a specific test case.  
+3. Choose **3** to regenerate the CSV inventory.  
+4. Optionally, choose **4** to run all steps in one go.  
+
+### Notes for Testers
+- Use **Normalize frontmatter** first to ensure all files are consistent.  
+- Use **Update metadata interactively** to record execution details after running a test.  
+- Use **Generate inventory CSV** to produce the latest spreadsheet for reporting.  
+- Always regenerate the CSV after updating metadata so the spreadsheet stays in sync.
+- Metadata fields include: **Test Schedule, Assigned Tester, Date of Execution, Status, Bug ID**.  
+- When prompted, press **Enter** to keep the current value unchanged.  
+- Use consistent formats for dates (YYYY/MM/DD) and statuses (PASSED, FAILED, Draft).  
+- After updating metadata, always regenerate the CSV to keep the spreadsheet in sync.  
+- The CSV file (`OnTrack TCM - Test Suites.csv`) can be opened in Excel or Google Sheets for tracking.  
+
+This workflow ensures the spreadsheet stays aligned with the test case files and metadata, making it easier to track execution results and bugs.

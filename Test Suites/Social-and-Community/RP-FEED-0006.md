@@ -1,16 +1,23 @@
 ---
-ID: "RP-FEED-0006"
-Title: "Test Case: RP-FEED-0006 | Asset Cross-Posting Share Workflows"
-Priority: "Medium"
-Status: "draft"
-Automated: "no"
-Owner: ""
-Requirements: ""
-Postconditions: |
-  - Tested on https://rotten-potato-tau.vercel.app/homepage using account testuser1@test.com (password: testuser1).
-  - Cleanup: log out after the test; remove or revert any test data created (posts, requests, payments, profile changes)
+ID: RP-FEED-0006
+Title: 'Test Case: RP-FEED-0006 | Asset Cross-Posting Share Workflows'
+Priority: Medium
+Status: draft
+Automated: 'no'
+Owner: ''
+Requirements: ''
+Postconditions: '- Tested on https://rotten-potato-tau.vercel.app/homepage using account
+  testuser1@test.com (password: testuser1).
+
+  - Cleanup: log out after the test; remove or revert any test data created (posts,
+  requests, payments, profile changes)
+
   - Verify environment returned to pre-test state before running subsequent tests.
+
+  '
+Test Schedule: 2026/03/23
 ---
+
 
 # Test Case: RP-FEED-0006 | Asset Cross-Posting Share Workflows
 

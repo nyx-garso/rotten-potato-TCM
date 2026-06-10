@@ -1,3 +1,23 @@
+---
+ID: RP-PAY-0006
+Title: 'Test Case: RP-PAY-0006 | Checkout Disabled With No Selection'
+Priority: Medium
+Status: draft
+Automated: 'no'
+Owner: ''
+Requirements: ''
+Postconditions: '- Tested on https://rotten-potato-tau.vercel.app/homepage using account
+  testuser1@test.com (password: testuser1).
+
+  - Cleanup: re-select cart items if continuing with checkout tests.
+
+  - Log out after testing when no further authenticated tests are queued.
+
+  '
+Test Schedule: 2026/03/23
+---
+
+
 ﻿---
 ID: "RP-PAY-0006"
 Title: "Test Case: RP-PAY-0006 | Checkout Disabled With No Selection"

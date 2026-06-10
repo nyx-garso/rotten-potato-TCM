@@ -1,16 +1,23 @@
 ---
-ID: "RP-PRF-0006"
-Title: "RP-PRF-0006 — Recent Activity Logging"
-Priority: "Medium"
-Status: "draft"
-Automated: "no"
-Owner: ""
-Requirements: ""
-Postconditions: |
-  - Tested on https://rotten-potato-tau.vercel.app/homepage using account testuser1@test.com (password: testuser1).
-  - Cleanup: log out after the test; remove or revert any test data created (posts, requests, payments, profile changes)
+ID: RP-PRF-0006
+Title: "RP-PRF-0006 \u2014 Recent Activity Logging"
+Priority: Medium
+Status: draft
+Automated: 'no'
+Owner: ''
+Requirements: ''
+Postconditions: '- Tested on https://rotten-potato-tau.vercel.app/homepage using account
+  testuser1@test.com (password: testuser1).
+
+  - Cleanup: log out after the test; remove or revert any test data created (posts,
+  requests, payments, profile changes)
+
   - Verify environment returned to pre-test state before running subsequent tests.
+
+  '
+Test Schedule: 2026/03/23
 ---
+
 
 # RP-PRF-0006 — Recent Activity Logging
 

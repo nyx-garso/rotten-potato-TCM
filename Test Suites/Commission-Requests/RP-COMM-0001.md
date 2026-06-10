@@ -1,3 +1,23 @@
+---
+ID: RP-COMM-0001
+Title: 'Test Case: RP-COMM-0001 | Commissioner Opens Post Request Modal'
+Priority: Medium
+Status: draft
+Automated: 'no'
+Owner: ''
+Requirements: ''
+Postconditions: '- Tested on https://rotten-potato-tau.vercel.app/homepage using commissioner
+  account testuser1@test.com (password: testuser1).
+
+  - Cleanup: close the modal if no request is posted.
+
+  - Log out after testing when no further authenticated tests are queued.
+
+  '
+Test Schedule: 2026/03/23
+---
+
+
 ﻿---
 ID: "RP-COMM-0001"
 Title: "Test Case: RP-COMM-0001 | Commissioner Opens Post Request Modal"

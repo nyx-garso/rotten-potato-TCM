@@ -1,155 +1,134 @@
-#!/usr/bin/env python3
-"""Generate CSV inventory for Test Suites and optionally add metadata frontmatter to test files.
-
-Usage:
-  python scripts/generate_inventory.py [--apply]
-
-If --apply is provided the script will insert a YAML-like frontmatter block into any
-test markdown file that is missing it, and will ensure a '## Postconditions' section exists.
-The script writes 'OnTrack TCM - Test Suites.csv' at the repository root.
-"""
 import os
+import yaml
 import csv
-import re
-import sys
+from openpyxl import Workbook
+from openpyxl.styles import Font, Alignment, PatternFill
+from openpyxl.utils import get_column_letter
+from openpyxl.formatting.rule import CellIsRule
+from openpyxl.worksheet.datavalidation import DataValidation
 
+TEST_CASES_DIR = "Test Suites"
+CSV_FILE = "OnTrack TCM - Test Suites.csv"
+XLSX_FILE = "OnTrack TCM - Test Suites.xlsx"
 
-BASE = 'Test Suites'
-CSV_NAME = 'OnTrack TCM - Test Suites.csv'
+FIELDS = ["Test Cases", "Test Schedule", "Assigned Tester",
+          "Date of Execution", "Status", "Bug ID"]
 
+def extract_frontmatter(file_path):
+    with open(file_path, "r", encoding="utf-8") as f:
+        content = f.read()
 
-def find_md_files(base=BASE):
-    for root, dirs, files in os.walk(base):
-        for f in files:
-            if f.lower().endswith('.md'):
-                yield os.path.join(root, f)
+    if content.startswith("---"):
+        parts = content.split("---", 2)
+        frontmatter = yaml.safe_load(parts[1]) or {}
+        return frontmatter
+    return {}
 
+def collect_testcases():
+    sections = {}
+    for root, _, files in os.walk(TEST_CASES_DIR):
+        section_name = os.path.basename(root)
+        if not files:
+            continue
+        rows = []
+        for file in files:
+            if file.endswith(".md"):
+                path = os.path.join(root, file)
+                fm = extract_frontmatter(path)
+                rows.append({
+                   "Test Cases": fm.get("Title", file.replace(".md", "")),
+                    "Test Schedule": fm.get("Test Schedule", "TBD"),
+                    "Assigned Tester": fm.get("Assigned Tester", "TBD"),
+                    "Date of Execution": fm.get("Date of Execution", "TBD"),
+                    "Status": fm.get("Status", "Draft"),
+                    "Bug ID": fm.get("Bug ID", "")
+                })
+        if rows:
+            sections[section_name] = rows
+    return sections
 
-def read_file(path):
-    with open(path, 'r', encoding='utf-8') as fh:
-        return fh.read()
-
-
-def write_file(path, text):
-    with open(path, 'w', encoding='utf-8') as fh:
-        fh.write(text)
-
-
-def extract_title_and_id(text, filename):
-    # Title: first header
-    title = ''
-    for line in text.splitlines():
-        if line.strip().startswith('#'):
-            title = line.lstrip('#').strip()
-            break
-        if line.strip():
-            # fallback: first non-empty line
-            title = title or line.strip()
-            break
-
-    # ID: prefer filename token
-    base = os.path.basename(filename)
-    m = re.match(r'(RP-[A-Z0-9-]+)\.md', base, re.IGNORECASE)
-    if m:
-        id_ = m.group(1).upper()
-    else:
-        # try to find in content
-        mm = re.search(r'\b(RP-[A-Z0-9-]+)\b', text)
-        id_ = mm.group(1).upper() if mm else ''
-
-    return title, id_
-
-
-def has_frontmatter(text):
-    return text.lstrip().startswith('---') or re.match(r'^ID:\s', text)
-
-
-def yaml_quote(value):
-    text = '' if value is None else str(value)
-    escaped = text.replace('\\', '\\\\').replace('"', '\\"')
-    return f'"{escaped}"'
-
-
-def make_frontmatter(meta):
-    lines = ['---']
-    for k in ['ID','Title','Priority','Status','Automated','Owner','Requirements','Postconditions']:
-        v = meta.get(k,'')
-        # ensure lists are comma-separated strings
-        if isinstance(v, list):
-            v = ', '.join(v)
-        if k == 'Postconditions' and isinstance(v, str) and '\n' in v:
-            lines.append(f'{k}: |')
-            for raw_line in v.splitlines():
-                lines.append(f'  {raw_line}')
-        else:
-            lines.append(f'{k}: {yaml_quote(v)}')
-    lines.append('---\n')
-    return '\n'.join(lines)
-
-
-def ensure_postconditions(text):
-    if re.search(r'^##\s*Postconditions', text, re.IGNORECASE | re.MULTILINE):
-        return text
-    if not text.endswith('\n'):
-        text += '\n'
-    text += '\n## Postconditions\n\n- None\n'
-    return text
-
-
-def process(apply_changes=False):
-    rows = []
-    for path in sorted(find_md_files()):
-        rel = path.replace('\\','/')
-        text = read_file(path)
-        title, id_ = extract_title_and_id(text, path)
-        fm_present = has_frontmatter(text)
-
-        meta = {'ID': id_, 'Title': title, 'Priority': 'Medium', 'Status': 'draft', 'Automated': 'no', 'Owner': '', 'Requirements': '', 'Postconditions': ''}
-
-        if not fm_present and apply_changes:
-            # backup
-            bak = path + '.bak'
-            if not os.path.exists(bak):
-                write_file(bak, text)
-            fm = make_frontmatter(meta)
-            new_text = fm + text
-            new_text = ensure_postconditions(new_text)
-            write_file(path, new_text)
-            text = new_text
-
-        # attempt to extract fields from frontmatter-ish or top lines
-        # simple parse: look for lines like 'Key: value' before first blank line
-        header = ''
-        for i, line in enumerate(text.splitlines()[:30]):
-            header += line + '\n'
-            if line.strip() == '':
-                break
-
-        def kv(key):
-            m = re.search(rf'^{key}:\s*(.*)$', header, re.IGNORECASE | re.MULTILINE)
-            return m.group(1).strip() if m else ''
-
-        priority = kv('Priority') or meta['Priority']
-        status = kv('Status') or meta['Status']
-        automated = kv('Automated') or meta['Automated']
-        owner = kv('Owner') or ''
-        requirements = kv('Requirements') or ''
-        postconds = kv('Postconditions') or ''
-
-        rows.append({'ID': id_, 'Title': title, 'Module': os.path.dirname(rel), 'Priority': priority, 'Status': status, 'Owner': owner, 'ReqIDs': requirements, 'Automated': automated, 'File': rel, 'Postconditions': postconds})
-
-    # write CSV
-    csv_path = CSV_NAME
-    with open(csv_path, 'w', newline='', encoding='utf-8') as csvfile:
-        fieldnames = ['ID','Title','Module','Priority','Status','Owner','ReqIDs','Automated','Postconditions','File']
-        writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+def write_csv(sections):
+    with open(CSV_FILE, "w", newline="", encoding="utf-8") as csvfile:
+        writer = csv.DictWriter(csvfile, fieldnames=FIELDS)
         writer.writeheader()
-        for r in rows:
-            writer.writerow(r)
 
-    print(f'Wrote {csv_path} with {len(rows)} entries')
+        for section, rows in sections.items():
+            writer.writerow({})
+            writer.writerow({"Test Cases": section})
+            for row in rows:
+                writer.writerow(row)
 
+def write_xlsx(sections, filename="OnTrack TCM - Test Suites.xlsx"):
+    wb = Workbook()
+    ws = wb.active
+    ws.title = "Test Suites"
 
-if __name__ == '__main__':
-    apply_changes = '--apply' in sys.argv
-    process(apply_changes=apply_changes)
+    # Header row
+    ws.append(FIELDS)
+    header_fill = PatternFill(start_color="BDD7EE", end_color="BDD7EE", fill_type="solid")
+    for col in range(1, len(FIELDS) + 1):
+        cell = ws.cell(row=1, column=col)
+        cell.font = Font(bold=True)
+        cell.alignment = Alignment(horizontal="center")
+        cell.fill = header_fill
+
+    # Freeze header row
+    ws.freeze_panes = "A2"
+
+    # Section styling
+    section_fill = PatternFill(start_color="D9D9D9", end_color="D9D9D9", fill_type="solid")
+
+    # Write sections
+    for section, rows in sections.items():
+        ws.append([])
+        ws.append([section])
+        section_cell = ws.cell(row=ws.max_row, column=1)
+        section_cell.font = Font(bold=True)
+        section_cell.fill = section_fill
+        for row in rows:
+            ws.append([row[field] for field in FIELDS])
+
+    # Adjust column widths
+    for i, field in enumerate(FIELDS, 1):
+        max_length = max(len(str(ws.cell(row=r, column=i).value or "")) for r in range(1, ws.max_row+1))
+        ws.column_dimensions[get_column_letter(i)].width = max_length + 2
+
+    # Conditional formatting for Status column
+    status_col = FIELDS.index("Status") + 1
+    ws.conditional_formatting.add(
+        f"{get_column_letter(status_col)}2:{get_column_letter(status_col)}{ws.max_row}",
+        CellIsRule(operator="equal", formula=['"PASSED"'],
+                   fill=PatternFill(start_color="C6EFCE", end_color="C6EFCE", fill_type="solid"))
+    )
+    ws.conditional_formatting.add(
+        f"{get_column_letter(status_col)}2:{get_column_letter(status_col)}{ws.max_row}",
+        CellIsRule(operator="equal", formula=['"FAILED"'],
+                   fill=PatternFill(start_color="FFC7CE", end_color="FFC7CE", fill_type="solid"))
+    )
+    ws.conditional_formatting.add(
+        f"{get_column_letter(status_col)}2:{get_column_letter(status_col)}{ws.max_row}",
+        CellIsRule(operator="equal", formula=['"Draft"'],
+                   fill=PatternFill(start_color="D9D9D9", end_color="D9D9D9", fill_type="solid"))
+    )
+
+    # Dropdown for Status column
+    dv = DataValidation(type="list", formula1='"PASSED,FAILED,Draft"', allow_blank=True)
+    ws.add_data_validation(dv)
+    dv.add(f"{get_column_letter(status_col)}2:{get_column_letter(status_col)}{ws.max_row}")
+
+    # Date format for Test Schedule & Date of Execution
+    for col_name in ["Test Schedule", "Date of Execution"]:
+        col_idx = FIELDS.index(col_name) + 1
+        for row in range(2, ws.max_row + 1):
+            ws.cell(row=row, column=col_idx).number_format = "yyyy/mm/dd"
+
+    wb.save(filename)
+    
+def main():
+    sections = collect_testcases()
+    write_csv(sections)
+    write_xlsx(sections)
+    print(f"✅ Inventory generated: {CSV_FILE} and {XLSX_FILE}")
+
+if __name__ == "__main__":
+    main()

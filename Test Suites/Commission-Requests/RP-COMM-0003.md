@@ -1,3 +1,23 @@
+---
+ID: RP-COMM-0003
+Title: 'Test Case: RP-COMM-0003 | Artist Test Account Setup'
+Priority: Medium
+Status: draft
+Automated: 'no'
+Owner: ''
+Requirements: ''
+Postconditions: '- Tested on https://rotten-potato-tau.vercel.app/signup and https://rotten-potato-tau.vercel.app/onboarding/artist
+  using a new artist test account.
+
+  - Cleanup: record the artist test account email used for later teardown.
+
+  - Log out after artist setup if switching back to the commissioner account.
+
+  '
+Test Schedule: 2026/03/23
+---
+
+
 ﻿---
 ID: "RP-COMM-0003"
 Title: "Test Case: RP-COMM-0003 | Artist Test Account Setup"

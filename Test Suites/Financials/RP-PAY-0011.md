@@ -1,3 +1,24 @@
+---
+ID: RP-PAY-0011
+Title: 'Test Case: RP-PAY-0011 | Artist Marks Commission Ready for Final Payment'
+Priority: Medium
+Status: draft
+Automated: 'no'
+Owner: ''
+Requirements: ''
+Postconditions: '- Tested on https://rotten-potato-tau.vercel.app/commissions/{request_id}
+  using the accepted artist test account.
+
+  - Cleanup: restore the commission status if the final payment test will not be run.
+
+  - Leave the commission in `awaiting_final_payment` when continuing to final payment
+  verification.
+
+  '
+Test Schedule: 2026/03/23
+---
+
+
 ﻿---
 ID: "RP-PAY-0011"
 Title: "Test Case: RP-PAY-0011 | Artist Marks Commission Ready for Final Payment"

@@ -1,3 +1,24 @@
+---
+ID: RP-PAY-0003
+Title: 'Test Case: RP-PAY-0003 | Selective Checkout Item Selection'
+Priority: Medium
+Status: draft
+Automated: 'no'
+Owner: ''
+Requirements: ''
+Postconditions: '- Tested on https://rotten-potato-tau.vercel.app/homepage using account
+  testuser1@test.com (password: testuser1).
+
+  - Cleanup: restore the original selected-item state if continuing with checkout
+  tests.
+
+  - Log out after testing when no further authenticated tests are queued.
+
+  '
+Test Schedule: 2026/03/23
+---
+
+
 ﻿---
 ID: "RP-PAY-0003"
 Title: "Test Case: RP-PAY-0003 | Selective Checkout Item Selection"

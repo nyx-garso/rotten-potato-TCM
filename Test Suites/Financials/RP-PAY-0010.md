@@ -1,3 +1,25 @@
+---
+ID: RP-PAY-0010
+Title: 'Test Case: RP-PAY-0010 | Commission Deposit Paid Commit'
+Priority: Medium
+Status: draft
+Automated: 'no'
+Owner: ''
+Requirements: ''
+Postconditions: '- Tested on https://rotten-potato-tau.vercel.app/homepage using commissioner
+  account testuser1@test.com (password: testuser1).
+
+  - Cleanup: remove/revert test payment rows, commission status updates, and artist
+  notifications after milestone testing is complete.
+
+  - Leave the commission in `in_progress` if continuing to artist ready/final payment
+  tests.
+
+  '
+Test Schedule: 2026/03/23
+---
+
+
 ﻿---
 ID: "RP-PAY-0010"
 Title: "Test Case: RP-PAY-0010 | Commission Deposit Paid Commit"

@@ -1,16 +1,23 @@
 ---
-ID: "RP-AUTH-0001"
-Title: "Test Case: RP-AUTH-0001 | Sign Up Page Navigation"
-Priority: "Medium"
-Status: "draft"
-Automated: "no"
-Owner: ""
-Requirements: ""
-Postconditions: |
-  - Tested on https://rotten-potato-tau.vercel.app/homepage using account testuser1@test.com (password: testuser1).
-  - Cleanup: log out after the test; remove or revert any test data created (posts, requests, payments, profile changes)
+Automated: 'no'
+ID: RP-AUTH-0001
+Owner: ''
+Postconditions: '- Tested on https://rotten-potato-tau.vercel.app/homepage using account
+  testuser1@test.com (password: testuser1).
+
+  - Cleanup: log out after the test; remove or revert any test data created (posts,
+  requests, payments, profile changes)
+
   - Verify environment returned to pre-test state before running subsequent tests.
+
+  '
+Priority: Medium
+Requirements: ''
+Status: draft
+Test Schedule: 2026/03/23
+Title: 'Test Case: RP-AUTH-0001 | Sign Up Page Navigation'
 ---
+
 
 # Test Case: RP-AUTH-0001 | Sign Up Page Navigation
 

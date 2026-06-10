@@ -1,3 +1,25 @@
+---
+ID: RP-PAY-0012
+Title: 'Test Case: RP-PAY-0012 | Commission Final Payment Commit'
+Priority: Medium
+Status: draft
+Automated: 'no'
+Owner: ''
+Requirements: ''
+Postconditions: '- Tested on https://rotten-potato-tau.vercel.app/homepage and https://rotten-potato-tau.vercel.app/commissions/{request_id}
+  using commissioner account testuser1@test.com (password: testuser1).
+
+  - Cleanup: remove/revert test final-payment rows, notifications, and commission
+  status changes after verification.
+
+  - Verify the commission remains available for delivery/fulfillment testing if those
+  tests are run next.
+
+  '
+Test Schedule: 2026/03/23
+---
+
+
 ﻿---
 ID: "RP-PAY-0012"
 Title: "Test Case: RP-PAY-0012 | Commission Final Payment Commit"

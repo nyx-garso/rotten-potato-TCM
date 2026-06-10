@@ -1,3 +1,24 @@
+---
+ID: RP-COMM-0002
+Title: 'Test Case: RP-COMM-0002 | Commissioner Posts Open Request'
+Priority: Medium
+Status: draft
+Automated: 'no'
+Owner: ''
+Requirements: ''
+Postconditions: '- Tested on https://rotten-potato-tau.vercel.app/homepage using commissioner
+  account testuser1@test.com (password: testuser1).
+
+  - Cleanup: remove or mark closed the test commission request after the dependent
+  artist-offer tests finish.
+
+  - Log out after testing when no further authenticated tests are queued.
+
+  '
+Test Schedule: 2026/03/23
+---
+
+
 ﻿---
 ID: "RP-COMM-0002"
 Title: "Test Case: RP-COMM-0002 | Commissioner Posts Open Request"
